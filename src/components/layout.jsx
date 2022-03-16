@@ -65,7 +65,7 @@ export function Layout({ children }) {
             
             
 <li className="grad" style={{position:'relative',}}>
-              <AnchorLink className="navbar-item" to="/#about" style={{paddingRight:'',}}>
+              <AnchorLink className="navbar-item" to="/#iso" style={{paddingRight:'',}}>
                 About Us 
               </AnchorLink>
               </li>
@@ -75,7 +75,8 @@ export function Layout({ children }) {
             </AnchorLink>
             </li>
             <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
-            <SiteLogo style={{maxHeight:'60px'}} />
+            <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}>
+            <SiteLogo style={{maxHeight:'60px'}} /></AnchorLink>
           </li>
             <li className="grad" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
@@ -83,9 +84,9 @@ export function Layout({ children }) {
               </AnchorLink>
               </li>
               <li className="grad" style={{position:'relative',}}>
-              <Link state={{modal: true}} to="/contact/" className="navbar-item" style={{paddingRight:'',}}>
+              <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
                 Contact Us
-              </Link>
+              </AnchorLink>
               </li>
             
            

@@ -1,32 +1,17 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import { Seo } from "../components/seo"
+// import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import { Helmet } from "react-helmet"
 // import { Footer } from "../components/footer"
-export const pageQuery = graphql`
-  query ContactQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 140)
-      frontmatter {
-        title
-      }
-    }
-    site {
-      siteMetadata {
-        title
-      }
-    } 
-  }
-`
 
-const Contact = ({ data }) => {
-  const { markdownRemark, site } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+
+const Contact = () => {
+  // const Contact = ({ data }) => {
+  // const { markdownRemark, site } = data // data.markdownRemark holds your post data
+  // const { frontmatter, html } = markdownRemark
 
 
 
@@ -40,10 +25,10 @@ const Contact = ({ data }) => {
       <Helmet>
   <body className="contactpage" />
 </Helmet>
-      <Seo
+      {/* <Seo
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
-      />
+      /> */}
 
 
 

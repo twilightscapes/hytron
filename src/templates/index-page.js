@@ -13,7 +13,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import Details from "../components/equipment-list"
 // import SocialMe from "../components/share"
-
+import Contact from "../templates/contact-page"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 // import Controls from "../components/Controls";
@@ -369,7 +369,7 @@ function Iframer() {
 
 
 
-<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc' }}>
+<div id="top" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc' }}>
 
 
 
@@ -986,6 +986,29 @@ ISO 9001:2015 and AS9100D certified
 
 
 
+
+
+<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
+<h2 style={{fontSize:'3vw'}}>How can Hytron help your company?</h2>
+
+<p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
+
+<p>We are proud to support some of the largest industries in the world who are globally recognized market leaders including aerospace/defense, semiconductor,
+electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p>
+
+
+<h4>Learn More</h4>
+<p>With our experienced team and advanced manufacturing capabilities, we can become your perfect supply chain partner.</p>
+
+<p>Request a quote to learn more about our services.</p>
+</div>
+
+
+
+<div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'20vh'}}>
+<h2 style={{fontSize:'3vw', textAlign:'center'}}>Contact Hytron</h2>
+<Contact />
+</div>
 
 
 {/* <SocialMe /> */}
