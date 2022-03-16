@@ -11,14 +11,14 @@ import SiteLogo from "../../static/assets/logo.svg"
 
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
 
 import Install from './install-discount'
 // import { navigate } from "gatsby";
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 export function Layout({ children }) {
 
   // const { iconimage } = useSiteMetadata()
@@ -40,8 +40,8 @@ export function Layout({ children }) {
       <div style={{overflow:''}}>
         {modal ? (
           <>
-          <div style={{display:'', position:'fixed', top:'3%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important',  filter:' drop-shadow(0px 4px 3px #000)',}}>
-          <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'', cursor:'pointer'}}>
+          <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
+          <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
             <AiOutlineClose />
             {/* <span className="TRON">[</span> */}
             
@@ -61,6 +61,36 @@ export function Layout({ children }) {
 
 <header name="pagetop" style={{}} >
 
+<ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(1rem, 2.3vw, 2.5rem)', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', paddingRight:'1rem', alignItems:'center'}}>
+            
+            
+<li className="grad" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#about" style={{paddingRight:'',}}>
+                About Us 
+              </AnchorLink>
+              </li>
+            <li className="grad" style={{position:'relative',}}>
+            <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
+              Our Capabilities 
+            </AnchorLink>
+            </li>
+            <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
+            <SiteLogo style={{maxHeight:'60px'}} />
+          </li>
+            <li className="grad" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
+                Industries Served 
+              </AnchorLink>
+              </li>
+              <li className="grad" style={{position:'relative',}}>
+              <Link state={{modal: true}} to="/contact/" className="navbar-item" style={{paddingRight:'',}}>
+                Contact Us
+              </Link>
+              </li>
+            
+           
+
+            </ul>
 
 
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
@@ -81,7 +111,7 @@ This is 2nd menu
   <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue', display:'none'}}>
 {/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
 <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%' }}/> 
 {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
@@ -162,17 +192,17 @@ This is 2nd menu
         </Link>
 </li>
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+      {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
   
       <Theme  style={{padding:'0'}} />
-   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+   <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
    
-   <CartButton quantity={quantity} /> */}
+   <CartButton quantity={quantity} />
 
 
-        </li>
+        </li> */}
 
     </ul>
 

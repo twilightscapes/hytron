@@ -23,7 +23,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/rackhouse-bourbon-header.jpg
+featuredImage: /assets/capability3.jpg
 svgImage: /assets/campfire.svg
 nftlink: ""
 nftdrop: ""

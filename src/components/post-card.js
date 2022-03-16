@@ -46,7 +46,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', background:'rgba(0, 0, 0, 0.2)' }}
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'relative', }}
   >
 
 

@@ -1,9 +1,9 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import GoBack from "../components/goBack"
-// import Theme from "../components/theme"
+// import GoBack from "../components/goBack"
+import Theme from "../components/theme"
 import Consent from "../components/Consent"
-import Install from "../components/Install-footer"
+// import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,
@@ -21,7 +21,7 @@ import {
   RiMediumFill,
   RiBehanceFill,
 } from "react-icons/ri"
-import { FaWordpress, FaVk, FaHeart } from "react-icons/fa"
+import { FaWordpress, FaVk } from "react-icons/fa"
 
 
 import { Link } from "gatsby"
@@ -170,9 +170,9 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  const { siteUrl } = useSiteMetadata();
+  // const { siteUrl } = useSiteMetadata();
 
-  const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
+  // const speedIt = "https://googlechrome.github.io/lighthouse/viewer/?psiurl=" + siteUrl + "%2F&amp;strategy=mobile&amp;category=performance&amp;category=accessibility&amp;category=best-practices&amp;category=seo&amp;category=pwa&amp;utm_source=lh-chrome-ext"
 
 
 
@@ -201,15 +201,14 @@ export function Footer() {
     <Consent />
 <br />
 
-    <Install />
+    {/* <Install /> */}
 <br />
     
       <div className="" style={{textAlign:'center'}}>
-
-
-      <Link state={{modal: true}} to="/contact/" className="button fire specialfont" style={{margin:'2rem 2rem', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px'}}>Contact Us - We&nbsp;<FaHeart />&nbsp;Feedback!</Link>
-
+      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
  <div >
+
+
      
 
         { !sIcons ? (
@@ -233,18 +232,20 @@ export function Footer() {
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}</div>
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
-{/* <Theme  style={{display:'flex', alignSelf:'center',}} />
-
-<br />
-<br /> */}
-
-<a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a></div>
-
-
+<Theme  style={{display:'flex', alignSelf:'center',}} />
 
 <br />
 <br />
-<GoBack />
+
+{/* <a href="https://vidsocks.com" target="_blank" rel="noreferrer">Web App by VidSocks</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a> */}
+
+</div>
+
+
+
+<br />
+<br />
+{/* <GoBack /> */}
       </nav>
    
     </footer>

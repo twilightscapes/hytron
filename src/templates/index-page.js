@@ -11,14 +11,14 @@ import BlogListHome from "../components/blog-list-home"
 import Newsignup from "../components/newssign"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import { RiArrowRightSLine } from "react-icons/ri"
+import Details from "../components/equipment-list"
+// import SocialMe from "../components/share"
 
-import SocialMe from "../components/share"
-
-// import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
+import ReactPlayer from 'react-player/lazy'
+import { ImPlay } from "react-icons/im"
 // import Controls from "../components/Controls";
 
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Panel1 from "../components/panel1"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import Panel2 from "../pages/shawshank-trailer"
@@ -94,17 +94,17 @@ export const pageQuery = graphql`
     }
 
     
-    menuimage: file(relativePath: { eq: "rackhouse-menu-button.jpg" }) {
+    capability1: file(relativePath: { eq: "capability1.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
       }
     }
-    libationsimage: file(relativePath: { eq: "rackhouse-libations-button.jpg" }) {
+    capability2: file(relativePath: { eq: "capability2.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
-    bourbonimage: file(relativePath: { eq: "rackhouse-bourbon-header.jpg" }) {
+    capability3: file(relativePath: { eq: "capability3.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
@@ -141,9 +141,9 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
- const MenuImage = data.menuimage.childImageSharp.gatsbyImageData
- const LibationsImage = data.libationsimage.childImageSharp.gatsbyImageData
- const BourbonImage = data.bourbonimage.childImageSharp.gatsbyImageData
+ const Capability1 = data.capability1.childImageSharp.gatsbyImageData
+ const Capability2 = data.capability2.childImageSharp.gatsbyImageData
+ const Capability3 = data.capability3.childImageSharp.gatsbyImageData
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
@@ -159,7 +159,7 @@ const HomePage = ({ data }) => {
     // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     // : ""
 
-    // const { iconimage } = useSiteMetadata()
+    const { iconimage } = useSiteMetadata()
 
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
@@ -369,7 +369,7 @@ function Iframer() {
 
 
 
-<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden' }}>
+<div id="homestart" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc' }}>
 
 
 
@@ -381,18 +381,18 @@ function Iframer() {
 
 
 
-{/* <ReactPlayer
+<ReactPlayer
             // ref={playerRef}
             width="100%"
             height="100%"
-   
+        style={{position:'fixed', bottom:'0', zIndex:'-2', opacity:'.2', filter:'contast(2.5)', backdropFilter:'blur(2px)'}}
             // url={iframeUrl}
-            url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
-            playing={playing}
-            controls={controls}
-            light={light}
-            loop={loop}
-            muted={muted}
+            url="https://youtu.be/5hhgss3pN9k"
+            playing={true}
+            controls={false}
+            light={false}
+            loop={true}
+            muted={true}
             config={{
               file: {
                 attributes: {
@@ -400,7 +400,7 @@ function Iframer() {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, autoplay:1, controls:0, start:10, end:2000, mute:1  }
+                playerVars: { showinfo:0, autoplay:1, controls:0, start:70, end:88, mute:1  }
               },
             }}
 
@@ -421,11 +421,11 @@ function Iframer() {
             </button>}
 
 
-          /> */}
+          />
           
 
-          
-          
+          <div className="backdrop11" style={{position:'fixed', bottom:'0', border:'0px solid yellow', zIndex:'', height:'100%', width:'100vw', background:'rgba(0,0,0,0.0)', backdropFilter:'blur(2px)'  }}></div>
+ 
           
           {/* </div> */}
 
@@ -472,38 +472,30 @@ function Iframer() {
 
 
 
-<div>
-{/* <Link title=""  to="/pulp-fiction-trailer/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+{/* <div>
 <StaticImage className=""
 alt="Super Yummy" src="../../static/assets/FILET-SMALL.jpg" />
-{/* </Link> */}
-</div>
+</div> */}
 
 
-<div>
-{/* <Link title="Shawshank Redemption by Stephen King - All In 60 Seconds"  to="/shawshank-trailer/" className="navbar-item button " style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+{/* <div>
 <StaticImage className=""
 alt="Delicious!" src="../../static/assets/FAROE-ISLAND-SALMON-scaled.jpg" />
-{/* </Link> */}
-</div>
+</div> */}
 
 
 
-<div>
-{/* <Link title="They Live by John Carpenter - All In 60 Seconds"  to="/they-live/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+{/* <div>
 <StaticImage className=""
 alt="Get Racked at the Rack House" src="../../static/assets/NEW-ZEALAND-RACK.jpg" />
-{/* </Link> */}
-</div>
+</div> */}
 
 
 
-<div>
-{/* <Link title="They Live by John Carpenter - All In 60 Seconds"  to="/mystery-science-theater-3022/" className="navbar-item  button " style={{margin:'', height:'100%', textDecoration:'none'}}> */}
+{/* <div>
 <StaticImage className=""
 alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
-{/* </Link> */}
-</div>
+</div> */}
 
 
 
@@ -517,8 +509,10 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
  
 
 <div></div>
+
+
 <div className="allin60panel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100%', margin:'0', background:''}}>
-<div style={{ background:'rgba(0,0,0,0.10)', width:'90vw', position:'relative', top:'', margin:'0 auto', padding:'4% 5%', zIndex:'1', textAlign:'', border:'1px solid #000', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
+<div style={{ width:'90vw', position:'relative', top:'', margin:'20px auto', padding:'4% 5%', zIndex:'3', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
   <Newsignup />
   </div>
 </div>
@@ -534,14 +528,27 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 {/* <div className="specialfont" style={{display:'flex', justifyContent:'center', alignSelf:'center', width:'100vw', margin:'0', padding:'1rem 20%', maxWidth:'', position:'relative', top:'0', zIndex:'2',}}> */}
-<a className="button actionJacksons specialfont" aria-label="Order Online Now" title="Order Online Now" rel="noreferrer" target="_blank" href="https://www.toasttab.com/rackhousegulfport/v3/" style={{ textDecoration:'none', padding:'.5rem', textShadow:'1px 1px 0 #333', borderRadius:'8px', fontSize:'clamp(1rem, 2vw, 2.8rem)', textAlign:'center', display:'flex', justifyContent:'center', maxWidth:'', margin:'1rem 30%'}}>
-Order Online Now
-</a>
+
+
+
+
+
 {/* </div> */}
 
 
 
-<div name="container21" className="container21" style={{marginTop:'',}}>
+<div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1'}}>
+
+
+
+
+{/* <Link state={{modal: true}} to={frontmatter.cta.ctaLink} className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px', maxWidth:'40vw'}}>{frontmatter.cta.ctaText}</Link> */}
+
+<div className="" style={{textAlign:'center'}}>
+      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
+ </div>
+{/* <AnchorLink className="actionJackson txtshadow" to="#experiences" title="Link">
+test</AnchorLink> */}
 
 {/* show feature */}
         {ShowFeature ? (
@@ -554,7 +561,7 @@ Order Online Now
 
 
 
-{Image ? (
+{/* {Image ? (
             <GatsbyImage loading="eager"
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -571,7 +578,7 @@ Order Online Now
    
             <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
-          )}
+          )} */}
 
 
 
@@ -620,7 +627,7 @@ Order Online Now
 
 
 
-<div className="specialfont" style={{position:'absolute', bottom:'5%', width:'100%', display:'flex', justifyContent:'space-between', gap:'20px', padding:'10%', border:'0px solid', zIndex:'5', color:'#fff'}}>
+{/* <div className="specialfont" style={{position:'absolute', bottom:'5%', width:'100%', display:'flex', justifyContent:'space-between', gap:'20px', padding:'10%', border:'0px solid', zIndex:'5', color:'#fff'}}>
 <div style={{fontSize:'clamp(1rem, 3vw, 3.8rem)', textShadow:'1px 1px 1px #111', width:'50%'}}>
 1301 26th Avenue
 <br />
@@ -636,7 +643,7 @@ Sat &amp; Sun Brunch
 <br />
 Happy Hour 3-6pm
 </div>
-  </div>
+  </div> */}
 
 
 
@@ -669,9 +676,9 @@ Happy Hour 3-6pm
 
 
           <h1 className="title1" style={{textAlign:'left', marginLeft:'1rem'}}>
-            {/* {frontmatter.title} */}
+            {frontmatter.title}
             {/* Today's Popular Subjects <br /> */}
-            The Rack House
+            {/* The Rack House */}
           </h1>
           {/* <h2
             className="tagline1"
@@ -693,11 +700,11 @@ Happy Hour 3-6pm
           />
 
 
-{/*   
+  
   <br />
-          <Link
+          {/* <Link state={{modal: true}} 
             to={frontmatter.cta.ctaLink}
-            className="button fire actionJackson"
+            className="button fire actionJackson specialfont"
             style={{
               cursor:'pointer',
               width:'80%',
@@ -705,29 +712,21 @@ Happy Hour 3-6pm
               margin:'0 auto',
               display:'flex',
               alignSelf:'center',
-              color:'#ccc'
+              color:'#ccc',
+              fontSize:'130%'
             }}
           >
             {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
+   
 
             
+
           </Link> */}
+
+{/* <Link state={{modal: true}} to={frontmatter.cta.ctaLink} className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px', maxWidth:'40vw'}}>{frontmatter.cta.ctaText}</Link> */}
 
          
 
-
-{/* <AnchorLink 
-className="actionJackson txtshadow"
-style={{
-  cursor:'pointer',
-  width:'70%',
-  margin:'0 auto'
-
-}} 
-to="#experiences" title="See the new EXPERIENCES™" /> */}
 
 
 
@@ -864,7 +863,7 @@ Through NFT
 
  
  <div className="flexbutt noexit print" style={{padding:'0 4%',
-position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>
+position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'10% auto 2rem auto', }}>
 
 
 
@@ -875,9 +874,9 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    {MenuImage ? (
+    {Capability1 ? (
             <GatsbyImage
-              image={MenuImage}
+              image={Capability1}
               alt="Image Alt Text"
               className=""
               style={{borderRadius:'8px'}}
@@ -886,17 +885,17 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             ""
           )}
     </a>
-    <br />
-    Our menu is steep in the traditions of the great steakhouses of America, however at virtually every step we have added our own "Rack House style" flair. We focus on providing a fantastic steak.
+    {/* <br />
+    Our menu is steep in the traditions of the great steakhouses of America, however at virtually every step we have added our own "Rack House style" flair. We focus on providing a fantastic steak. */}
     </div>
 
 
     
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    {LibationsImage ? (
+    {Capability2 ? (
             <GatsbyImage
-              image={LibationsImage}
+              image={Capability2}
               alt="Image Alt Text"
               className=""
               style={{borderRadius:'8px'}}
@@ -905,17 +904,17 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             ""
           )}
     </a>
-    <br />
-    Our mezzanine level of the Rack House was designed to be a place to sit back in a comfy couch, leather chair, or at the bar with friends and enjoy a unique atmosphere and great libations.
+    {/* <br />
+    Our mezzanine level of the Rack House was designed to be a place to sit back in a comfy couch, leather chair, or at the bar with friends and enjoy a unique atmosphere and great libations. */}
     </div>
 
 
 
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
-    {BourbonImage ? (
+    {Capability3 ? (
             <GatsbyImage
-              image={BourbonImage}
+              image={Capability3}
               alt="Image Alt Text"
               className=""
               style={{borderRadius:'8px'}}
@@ -924,8 +923,8 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             ""
           )}
     </a>
-    <br />
-    Join the Bourbon Society and you get to enjoy plenty of perks such as a personalized decanter, exclusive access to coveted bourbons, monthly tastings and so much more!
+    {/* <br />
+    Join the Bourbon Society and you get to enjoy plenty of perks such as a personalized decanter, exclusive access to coveted bourbons, monthly tastings and so much more! */}
     </div>
 
 
@@ -934,16 +933,62 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<div className="specialfont" style={{textAlign:'center', fontSize:'5vw', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
-Virtual Tour
-  <Link state={{modal: true}} to="/virtual-tour/" className="" style={{margin:'', textDecoration:'none'}}>
-  <StaticImage src="../../static/assets/virtual-tour.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
+<h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
+
+<p>Hytron’s Quality Management System (QMS) is <a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
+
+<p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
+
+<p>We specialize in small to medium sized parts in many different quantities. From one-piece short run prototypes to very large volume production. Whether your part contains one component or many, needs special processing or assembly capabilities, our production team can take your project from conception to production. We are the trusted go-to source for the aerospace, medical, commercial, military, and computer industries for over 55 years in business.  Let our dedicated team take your vision/concept and make it a reality.</p>
+
+<p>We have built a long standing reputation as a manufacturer of precision products that are field proven and time tested.  Contact one of our professionals for information on your specific manufacturing requirements.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
+ISO 9001:2015 and AS9100D certified
+  <Link state={{modal: true}} to="Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" className="" style={{margin:'', textDecoration:'none'}}>
+  <StaticImage src="../../static/assets/Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
 </Link>
 </div>
 <br /><br />
 
 
-<SocialMe />
+
+<Details id="equipmentlist" />
+
+
+
+
+
+{/* <SocialMe /> */}
 
 <Footer id="footer" />
     </Layout>

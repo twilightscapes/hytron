@@ -22,7 +22,7 @@ import { Footer } from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import {CopyToClipboard} from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import YouTubed from "../pages/youtube"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
@@ -641,26 +641,26 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
     {ShareThis ? (
-<Link to="#sharethis" style={{}}>
+<AnchorLink to="#sharethis" style={{}}>
   Share
-        </Link>
+        </AnchorLink>
  ) : (
   ""
 )}
 
 {Comments ? (
-          <Link to="#comments" style={{}}>
+          <AnchorLink to="#comments" style={{}}>
   Comments
-        </Link>
+        </AnchorLink>
        
           ) : (
             ""
           )}
 
 
-<Link to="#footer" style={{border:'0px solid', }}>
+<AnchorLink to="#footer" style={{border:'0px solid', }}>
   Footer
-        </Link>
+        </AnchorLink>
 
 
 </div>
@@ -846,9 +846,9 @@ const svgUrl = frontmatter.svgImage.publicURL
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
-              className="mcboaty"
+              className="mcboaty1"
               style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'',
-             objectFit:'contain', border:'0px solid red !important'}}
+             objectFit:'contain', border:'0px solid red !important', background:'transparent'}}
             />
             
           ) : (
@@ -911,7 +911,9 @@ const svgUrl = frontmatter.svgImage.publicURL
             <Iframer3 />
           )}
 
-
+{/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>
+                About Us 
+              </AnchorLink> */}
 <div style={{padding:'0 5vw', color:'inherit !important'}}>
       {(previous || next) && <Pagination {...props} />}
       </div>
@@ -1078,7 +1080,8 @@ const svgUrl = frontmatter.svgImage.publicURL
    </CustomBox>
 
    <section id="footer" style={{height:'100vh', marginTop:'',  background:'rgba(0,0,0,0.30)',}}>
-   <Footer /></section>
+   <Footer />
+   <GoBack /></section>
     </Layout>
 
 
