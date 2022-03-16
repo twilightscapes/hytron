@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
+import React from "react"
+// import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Footer } from "../components/footer";
 import { Seo } from "../components/seo"
@@ -181,20 +182,20 @@ const HomePage = ({ data }) => {
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
   
-    const UnderlayImage = frontmatter.underlayImage
-    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    : ""
+    // const UnderlayImage = frontmatter.underlayImage
+    // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
+    // : ""
 
     // const { iconimage } = useSiteMetadata()
 
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
-    const YouTubeStart = frontmatter.youtubestart
-    const YouTubeEnd = frontmatter.youtubeend
-    const YouTubeMute = frontmatter.youtubemute
-    const YouTubeControls = frontmatter.youtubecontrols
-    const YouTubeAutostart = frontmatter.youtubeautostart
+    // const YouTubeStart = frontmatter.youtubestart
+    // const YouTubeEnd = frontmatter.youtubeend
+    // const YouTubeMute = frontmatter.youtubemute
+    // const YouTubeControls = frontmatter.youtubecontrols
+    // const YouTubeAutostart = frontmatter.youtubeautostart
 
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
