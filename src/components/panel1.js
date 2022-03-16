@@ -97,8 +97,8 @@ lyMbKxulSPk
 
 
 <div style={{height:'100vh', width:'100vw', background:'#111', position:'fixed', top:'0', zIndex:'-1', backgroundSize:'cover'}}>
-<StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   />
+{/* <StaticImage className=""
+alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   /> */}
 </div>
 
 <div className="specialfont" style={{position:'relative', zIndex:'3', right:'', top:'' , padding:'20% 0 0 0', textShadow:'2px 2px 2px #333',}}>

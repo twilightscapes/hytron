@@ -22,9 +22,9 @@ isnftforsale: ""
 svgzindex: "0"
 comments: "1"
 shareable: "1"
-underlayImage: /assets/swd-foreground.png
-featuredImage: /assets/capability2.jpg
-svgImage: /assets/campfire.svg
+underlayImage: /assets/transparent.png
+featuredImage: /assets/transparent.png
+svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""

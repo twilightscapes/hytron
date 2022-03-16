@@ -2,8 +2,8 @@
 slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
-featuredImage: /assets/guy-lathe.jpg
-secondaryImage: /assets/secondary.jpg
+featuredImage: /assets/transparent.png
+secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: ""

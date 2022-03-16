@@ -23,7 +23,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/capability3.jpg
+featuredImage: /assets/transparent.png
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
