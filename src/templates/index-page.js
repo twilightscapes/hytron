@@ -14,8 +14,8 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Details from "../components/equipment-list"
 // import SocialMe from "../components/share"
 import Contact from "../templates/contact-page"
-import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import ReactPlayer from 'react-player/lazy'
+// import { ImPlay } from "react-icons/im"
 // import Controls from "../components/Controls";
 
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
@@ -159,7 +159,7 @@ const HomePage = ({ data }) => {
     // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     // : ""
 
-    const { iconimage } = useSiteMetadata()
+    // const { iconimage } = useSiteMetadata()
 
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()

@@ -15,13 +15,13 @@ import SiteLogo from "../../static/assets/logo.svg"
 
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Install from './install-discount'
 // import { navigate } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 export function Layout({ children }) {
 
-  const { iconimage } = useSiteMetadata()
+  // const { iconimage } = useSiteMetadata()
   // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
   // const items = checkout ? checkout.lineItems : []

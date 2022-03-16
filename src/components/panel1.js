@@ -1,16 +1,16 @@
 
-
-import React, { useRef } from "react";
+import React from "react"
+// import React, { useRef } from "react";
 import styled from "styled-components"
 
 // import { Link } from "gatsby"
 // import { graphql } from "gatsby"
 // import { GatsbyImage } from 'gatsby-plugin-image'
 // import TwilightLogo from "../../static/assets/logo.svg"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 // import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
-import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+// import ReactPlayer from 'react-player/lazy'
+// import { ImPlay } from "react-icons/im"
 // import LightCycle from "../../static/assets/light-cycle.svg"
 // import QuoraStrike from "../../static/assets/quora-strike.svg"
 // import LoveSignal from "../../static/assets/love-signal.svg"
@@ -43,8 +43,8 @@ const CustomBox = styled.div`
 function Characters() {
 
 
-  const playerRef = useRef(null);
-  const playerContainerRef = useRef(null);
+  // const playerRef = useRef(null);
+  // const playerContainerRef = useRef(null);
 
   return (
 
@@ -52,15 +52,10 @@ function Characters() {
 <CustomBox style={{}}>
 
 {/* GRID INTRO */}
-<div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'', width:'100%', position:'relative', overflow:'hidden'}}>
+{/* <div className="" id="" style={{display:'',  padding:'0', outline:'0px solid yellow', height:'', width:'100%', position:'relative', overflow:'hidden'}}>
 
 
-{/* https://youtu.be/lyMbKxulSPk 
 
-JOMipAq7ZSk
-lyMbKxulSPk
-5hhgss3pN9k
-*/}
 
 
 <div id="" className="wrap-element tronpanel" style={{overflow:'', height:'', position:'relative', zIndex:'0' }} ref={playerContainerRef}>
@@ -97,8 +92,8 @@ lyMbKxulSPk
 
 
 <div style={{height:'100vh', width:'100vw', background:'#111', position:'fixed', top:'0', zIndex:'-1', backgroundSize:'cover'}}>
-{/* <StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   /> */}
+<StaticImage className=""
+alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   />
 </div>
 
 <div className="specialfont" style={{position:'relative', zIndex:'3', right:'', top:'' , padding:'20% 0 0 0', textShadow:'2px 2px 2px #333',}}>
@@ -121,7 +116,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ho
 
 </div>
 
-</div>
+</div> */}
 
 
 
