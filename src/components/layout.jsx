@@ -6,8 +6,8 @@ import { AiOutlineClose } from "react-icons/ai"
 
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
-import Bug from "../../static/assets/logo.svg"
-import SiteLogo from "../../static/assets/logo.svg"
+// import Bug from "../../static/assets/logo.svg"
+// import SiteLogo from "../../static/assets/logo.svg"
 
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
@@ -15,13 +15,13 @@ import SiteLogo from "../../static/assets/logo.svg"
 
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
-
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Install from './install-discount'
 // import { navigate } from "gatsby";
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 export function Layout({ children }) {
 
-  // const { iconimage } = useSiteMetadata()
+  const { iconimage } = useSiteMetadata()
   // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
   // const items = checkout ? checkout.lineItems : []
@@ -76,7 +76,9 @@ export function Layout({ children }) {
             </li>
             <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}>
-            <SiteLogo style={{maxHeight:'60px'}} /></AnchorLink>
+            {/* <SiteLogo style={{maxHeight:'60px'}} /> */}
+            <img className="" src={iconimage} alt="Logo" style={{maxHeight:'60px'}} />
+            </AnchorLink>
           </li>
             <li className="grad" style={{position:'relative',}}>
               <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
@@ -113,8 +115,8 @@ This is 2nd menu
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue', display:'none'}}>
-{/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
-<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%' }}/> 
+<img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} />
+{/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%' }}/>  */}
 {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
 </div>
   </label>
@@ -137,7 +139,7 @@ This is 2nd menu
 
     <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
     <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-<SiteLogo />
+{/* <SiteLogo /> */}
  </li>
 
 
