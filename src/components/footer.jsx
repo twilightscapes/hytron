@@ -204,9 +204,9 @@ export function Footer() {
     {/* <Install /> */}
 <br />
     
-      <div className="" style={{textAlign:'center'}}>
+      {/* <div className="" style={{textAlign:'center'}}>
       <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
- <div >
+ </div> */}
 
 
      
@@ -221,10 +221,10 @@ export function Footer() {
   )}
   
         
-        </div>
+      
 
         
-      </div>
+
       <nav className="footerlinks" aria-label="footer">
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   

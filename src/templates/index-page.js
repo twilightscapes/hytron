@@ -1,30 +1,34 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
+import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Footer } from "../components/footer";
 import { Seo } from "../components/seo"
-import { Helmet } from "react-helmet"
+// import { ImPlay } from "react-icons/im"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
+// import Controls from "../components/Controls";
+import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 import BlogListHome from "../components/blog-list-home"
 import Newsignup from "../components/newssign"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import { RiArrowRightSLine } from "react-icons/ri"
 import Details from "../components/equipment-list"
-// import SocialMe from "../components/share"
-import Contact from "../templates/contact-page"
-// import ReactPlayer from 'react-player/lazy'
-// import { ImPlay } from "react-icons/im"
-// import Controls from "../components/Controls";
-
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
-import Panel1 from "../components/panel1"
+import Contact from "../components/contact-inc"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
+// import { RiArrowRightSLine } from "react-icons/ri"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+// import BackgroundImage from 'gatsby-background-image'
+import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
+
+
+
+// import TimeAgo from 'react-timeago'
+// import Countdown from 'react-countdown'
 
 export const pageQuery = graphql`
   query HomeQueryHomeQuery($id: String! ) {
+    
     
     site {
       siteMetadata {
@@ -38,6 +42,12 @@ export const pageQuery = graphql`
         showfooter
       }
 
+
+
+
+      
+
+      
 
     }
     markdownRemark(id: { eq: $id }) {
@@ -63,7 +73,7 @@ export const pageQuery = graphql`
         featuredImage {
           publicURL
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
           }
         }
         secondaryImage {
@@ -87,29 +97,31 @@ export const pageQuery = graphql`
     }
 
 
-    desktop: file(relativePath: { eq: "curtains.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-      }
-    }
 
-    
-    capability1: file(relativePath: { eq: "transparent.png" }) {
+
+
+  
+    capability1: file(relativePath: { eq: "capability1.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
       }
     }
-    capability2: file(relativePath: { eq: "transparent.png" }) {
+    capability2: file(relativePath: { eq: "capability2.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
-    capability3: file(relativePath: { eq: "transparent.png" }) {
+    capability3: file(relativePath: { eq: "capability3.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
 
+
+
+    
+
+    
 
     posts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -130,7 +142,7 @@ export const pageQuery = graphql`
             featuredImage {
               publicURL
               childImageSharp {
-                gatsbyImageData( layout: FULL_WIDTH)
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
               }
             }
           }
@@ -140,35 +152,49 @@ export const pageQuery = graphql`
   }
 `
 
+
+
+
+
+
+
+
+
+
 const HomePage = ({ data }) => {
+
+
  const Capability1 = data.capability1.childImageSharp.gatsbyImageData
  const Capability2 = data.capability2.childImageSharp.gatsbyImageData
  const Capability3 = data.capability3.childImageSharp.gatsbyImageData
+
+//  const imageData = data.desktop.childImageSharp.fluid
+
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
-  // const Image = frontmatter.featuredImage
-  //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-  //   : ""
+  const Image = frontmatter.featuredImage
+    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+    : ""
 
     const SecondaryImage = frontmatter.secondaryImage
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
   
-    // const UnderlayImage = frontmatter.underlayImage
-    // ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
-    // : ""
+    const UnderlayImage = frontmatter.underlayImage
+    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
+    : ""
 
     // const { iconimage } = useSiteMetadata()
 
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
-    // const YouTubeStart = frontmatter.youtubestart
-    // const YouTubeEnd = frontmatter.youtubeend
-    // const YouTubeMute = frontmatter.youtubemute
-    // const YouTubeControls = frontmatter.youtubecontrols
-    // const YouTubeAutostart = frontmatter.youtubeautostart
+    const YouTubeStart = frontmatter.youtubestart
+    const YouTubeEnd = frontmatter.youtubeend
+    const YouTubeMute = frontmatter.youtubemute
+    const YouTubeControls = frontmatter.youtubecontrols
+    const YouTubeAutostart = frontmatter.youtubeautostart
 
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
@@ -187,7 +213,7 @@ const HomePage = ({ data }) => {
     function AddSvg(){
       const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
       return (
-        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" ></object>
+        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
       )
     }
 
@@ -196,7 +222,7 @@ const HomePage = ({ data }) => {
     // const [state, setState] = useState({
     //   playing: true,
     //   controls: false,
-    //   light: true,
+    //   light: false,
     //   muted: true,
     //   loop: true,
     // });
@@ -226,6 +252,11 @@ const HomePage = ({ data }) => {
     
     // const { iconimage } = useSiteMetadata()
 
+ 
+
+
+
+
 const YouTube = frontmatter.youtuber
 
 if (!YouTube) {
@@ -239,8 +270,8 @@ else{
 function Iframer() {
   
 
-  // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
-  return (
+//   const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+//   return (
 //     <ReactPlayer
 //     className='react-player66'
 //     url={Url}
@@ -262,24 +293,23 @@ function Iframer() {
 //     loop
 //     playing
 //     playsinline
-//       playIcon={
-//         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+// //       playIcon={
+// //         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
-//     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+// //     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
     
 
-//       <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// </div>
+// //       <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// // <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// // </div>
 
-//       <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-// <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-//       </div>
-//       </button>}
-//         light="../assets/transparent.png"
+// //       <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+// // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+// //       </div>
+// //       </button>}
+// //         light="../assets/transparent.png"
 //     />
-""
-  )
+//   )
 }
 
 
@@ -364,18 +394,29 @@ function Iframer() {
 
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
 />
-        
+      
 
 
 
+
+{/* VIDEO URLS */}
+
+
+
+{/* uCf3Q43fC_4 cool train */}
+
+
+
+
+
+
+{/* <HomeHolder /> */}
 
 <div id="top" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc' }}>
+{/* <div className="RArrow"><span></span></div> */}
 
 
-
-
-
-{/* <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'', position:'relative', top:'0', zIndex:''}}> */}
+{/* <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'70vh', position:'absolute', top:'0', zIndex:''}}> */}
 
 
 
@@ -385,14 +426,14 @@ function Iframer() {
             // ref={playerRef}
             width="100%"
             height="100%"
-        style={{position:'fixed', bottom:'0', zIndex:'-2', opacity:'.2', filter:'contast(2.5)', backdropFilter:'blur(2px)'}}
+   
             // url={iframeUrl}
-            url="https://youtu.be/5hhgss3pN9k"
-            playing={true}
-            controls={false}
-            light={false}
-            loop={true}
-            muted={true}
+            url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
+            playing={playing}
+            controls={controls}
+            light={light}
+            loop={loop}
+            muted={muted}
             config={{
               file: {
                 attributes: {
@@ -400,7 +441,7 @@ function Iframer() {
                 },
               },
               youtube: {
-                playerVars: { showinfo:0, autoplay:1, controls:0, start:70, end:88, mute:1  }
+                playerVars: { showinfo:0, autoplay:1, controls:0, start:10, end:2000, mute:1  }
               },
             }}
 
@@ -424,8 +465,8 @@ function Iframer() {
           /> */}
           
 
-          <div className="backdrop11" style={{position:'fixed', bottom:'0', border:'0px solid yellow', zIndex:'', height:'100%', width:'100vw', background:'rgba(0,0,0,0.0)', backdropFilter:'blur(2px)'  }}></div>
- 
+          
+          
           
           {/* </div> */}
 
@@ -443,20 +484,36 @@ function Iframer() {
           
 <div className="horizontal-scroll panels" style={{}}>
 
+
+
 <div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
+{/* <div></div> */}
+
+
+
+{/* <GridLoader /> */}
 
 
 {/* <div id="homestart"><Panel1 /></div> */}
 
+{/* <BackgroundImage
+      Tag="section"
+      className=""
+      fluid={imageData}
+      backgroundColor={`#111`}
+      style={{}}
+     >
 
 
-{/* <div className="donation2" style={{display:'grid',
+
+
+<div className="donation2" style={{display:'grid',
   placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
 
   <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 5vw 20vh 5vw', position:'', top:'', border:'0px solid', diplay:'', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">All that's cool </div> <div className="lineTwo">in 60 seconds</div><br /><span style={{fontSize:'2rem'}}>allin60.com</span></h1>
   
-</div> */}
-
+</div>
+</BackgroundImage> */}
 
 
 
@@ -464,18 +521,11 @@ function Iframer() {
 
   <Panel1 />
 
-
 </div>
 
 
 
 
-
-
-{/* <div>
-<StaticImage className=""
-alt="Super Yummy" src="../../static/assets/FILET-SMALL.jpg" />
-</div> */}
 
 
 {/* <div>
@@ -527,33 +577,22 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 
-{/* <div className="specialfont" style={{display:'flex', justifyContent:'center', alignSelf:'center', width:'100vw', margin:'0', padding:'1rem 20%', maxWidth:'', position:'relative', top:'0', zIndex:'2',}}> */}
-
-
-
-
-
-{/* </div> */}
-
 
 
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1'}}>
 
-
-
-
-{/* <Link state={{modal: true}} to={frontmatter.cta.ctaLink} className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px', maxWidth:'40vw'}}>{frontmatter.cta.ctaText}</Link> */}
-
 <div className="" style={{textAlign:'center'}}>
       <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
  </div>
-{/* <AnchorLink className="actionJackson txtshadow" to="#experiences" title="Link">
-test</AnchorLink> */}
 
 {/* show feature */}
         {ShowFeature ? (
             
        
+          
+
+
+        
 <section style={{ display:'',}}>
   <article>
 
@@ -561,24 +600,21 @@ test</AnchorLink> */}
 
 
 
-{/* {Image ? (
-            <GatsbyImage loading="eager"
+
+{Image ? (
+            <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'', top:'', zIndex:'0', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'0', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
             />
-
-            // <StaticImage loading="eager" src="../../static/assets/rackhouse-barrel.jpg" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'cover',}} />
-
-            // <img src="assets/rackhouse-barrel.jpg" alt="" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
             
           ) : (
 
    
             <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
-          )} */}
+          )}
 
 
 
@@ -597,7 +633,12 @@ test</AnchorLink> */}
 
  
 
-
+  {Svg ? (
+            <AddSvg />
+       
+          ) : (
+            ""
+          )}
 
 
 
@@ -627,29 +668,8 @@ test</AnchorLink> */}
 
 
 
-{/* <div className="specialfont" style={{position:'absolute', bottom:'5%', width:'100%', display:'flex', justifyContent:'space-between', gap:'20px', padding:'10%', border:'0px solid', zIndex:'5', color:'#fff'}}>
-<div style={{fontSize:'clamp(1rem, 3vw, 3.8rem)', textShadow:'1px 1px 1px #111', width:'50%'}}>
-1301 26th Avenue
-<br />
-Gulfport, MS
-<br />
-<a className="call" href="tel:+2282062744">228-206-2744</a>
-</div>
-
-<div style={{fontSize:'clamp(.9rem, 3vw, 3.8rem)', textShadow:'1px 1px 1px #111', width:'50%', textAlign:'right'}}>
-Open Daily At 11am
-<br />
-Sat &amp; Sun Brunch
-<br />
-Happy Hour 3-6pm
-</div>
-  </div> */}
-
-
 
       </div>
-
-
   </article>
 </section>
 
@@ -671,11 +691,11 @@ Happy Hour 3-6pm
 
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
-<div className="flexbutt" style={{display:'flex', gap:'10px'}}>
+<div className="flexbutt" style={{display:'flex', gap:'30px'}}>
       <div className="flexcheek " style={{padding:'1rem 2rem 0 2rem', maxHeight:'90vh',}}>
 
 
-          <h1 className="title1" style={{textAlign:'left', marginLeft:'1rem'}}>
+      <h1 className="title1" style={{textAlign:'left', marginLeft:'1rem'}}>
             {frontmatter.title}
             {/* Today's Popular Subjects <br /> */}
             {/* The Rack House */}
@@ -701,7 +721,7 @@ Happy Hour 3-6pm
 
 
   
-  <br />
+<br />
           {/* <Link state={{modal: true}} 
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson specialfont"
@@ -723,12 +743,28 @@ Happy Hour 3-6pm
 
           </Link> */}
 
-{/* <Link state={{modal: true}} to={frontmatter.cta.ctaLink} className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', padding:'1rem 2rem', borderRadius:'8px', maxWidth:'40vw'}}>{frontmatter.cta.ctaText}</Link> */}
-
          
 
 
+{/* <AnchorLink 
+className="actionJackson txtshadow"
+style={{
+  cursor:'pointer',
+  width:'70%',
+  margin:'0 auto'
 
+}} 
+to="#experiences" title="See the new EXPERIENCES™" /> */}
+
+
+
+
+{/* <span className="actionJackson txtshadow"> <span className="icon -right">
+              <FaHandPointDown />
+            </span> &nbsp;&nbsp;All New EXPERIENCES &nbsp;&nbsp;<span className="icon -right">
+              <FaHandPointDown />
+            </span></span> */}
+          
 
 
       </div>
@@ -754,7 +790,7 @@ Happy Hour 3-6pm
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
-              className="post-card mobilehide"
+              className="post-card"
               style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
             />
           ) : (
@@ -819,9 +855,7 @@ Through NFT
 
 
 
-<div style={{textAlign:'center', fontSize:'5vw', margin:'10vh 0 0 0'}}>
-  {/* Latest Minutes: */}
-  </div>
+{/* <div style={{textAlign:'center', fontSize:'5vw', margin:'10vh 0 0 0'}}>Latest Minutes:</div> */}
 
 
 
@@ -855,13 +889,8 @@ Through NFT
 
  </div>{/* end scooch */}
 
+      
 
-
-
-
-
-
- 
  <div className="flexbutt noexit print" style={{padding:'0 4%',
 position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'10% auto 2rem auto', }}>
 
@@ -939,20 +968,10 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
 <h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
 
-<p>Hytron’s Quality Management System (QMS) is <a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
+<p>Hytron’s Quality Management System (QMS) is <a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
 
 <p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
 
@@ -967,22 +986,23 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-
-
-
-
-
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
-<a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">
+  <Link state={{modal: true}} to="Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" className="" style={{margin:'', textDecoration:'none'}}>
   <StaticImage src="../../static/assets/Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
-</a>
+</Link>
 </div>
 <br /><br />
 
 
 
+
+
+
+
 <Details id="equipmentlist" />
+
+
 
 
 
@@ -1005,18 +1025,22 @@ electronics/telecom, military/government, and medical to mention a few. We have 
 
 
 
+
+
 <div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'20vh'}}>
 <h2 style={{fontSize:'3vw', textAlign:'center'}}>Contact Hytron</h2>
 <Contact />
 </div>
 
 
-{/* <SocialMe /> */}
 
-<Footer id="footer" />
+
+
+<Footer />
     </Layout>
   )
 }
 
 export default HomePage
   
+

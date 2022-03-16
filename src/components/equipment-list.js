@@ -28,11 +28,11 @@ const ProductDetails = () => (
 <CustomBox style={{}}>
 
 
-<Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'1000px', margin:'0 auto', overflow:'hidden', marginTop:'40px',}}>
+<Tabs className="infomenu" style={{minHeight:'20vh', width:'100%', maxWidth:'1000px', margin:'0 auto', overflow:'hidden', marginTop:'40px',}}>
         <h2 className="specialfont" style={{fontSize:'3vw', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><span>CNC Mills – Total: 25</span></div></Tab>
-    <Tab><div className="iconmenu"><span>CNC Lathes – Total: 7</span></div></Tab>
+    <Tab><div className="iconmenu"><span>CNC Mills  Total: 25</span></div></Tab>
+    <Tab><div className="iconmenu"><span>CNC Lathes  Total: 7</span></div></Tab>
     <Tab><div className="iconmenu"><span>Inspection Equipment</span></div></Tab>
     <Tab><div className="iconmenu"><span>Other Equipment</span></div></Tab>
       
@@ -45,7 +45,7 @@ const ProductDetails = () => (
            <p>
            Edited and production output to Tiff file format<br /> <br />
            Typical file size 30-50MB<br /> <br />
-           Average dimensions range from 4988×3325 to 5481x3653 or greater<br /> <br />
+           Average dimensions range from 4988 × 3325 to 5481x3653 or greater<br /> <br />
            All Twilightscapes are shot using the latest state-of-the-art equipment and lenses.
            <br /><br />Canon 5D series, Sony A7R series and Sony A7S series.
            </p>
@@ -69,7 +69,7 @@ const ProductDetails = () => (
     <strong style={{fontSize:'1.5rem'}}>Legal</strong><br /><br />
 
 
-<h4>There are two licensing options:</h4>
+<h3>There are two licensing options:</h3>
 <ol style={{margin:'1rem 3rem'}}>
 <li style={{}}>Personal Use License which includes printing rights. All use and restrictions are limited to private use only.</li>
 <br />
