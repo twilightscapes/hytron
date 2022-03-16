@@ -94,17 +94,17 @@ export const pageQuery = graphql`
     }
 
     
-    capability1: file(relativePath: { eq: "capability1.jpg" }) {
+    capability1: file(relativePath: { eq: "transparent.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
       }
     }
-    capability2: file(relativePath: { eq: "capability2.jpg" }) {
+    capability2: file(relativePath: { eq: "transparent.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
-    capability3: file(relativePath: { eq: "capability3.jpg" }) {
+    capability3: file(relativePath: { eq: "transparent.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
@@ -141,9 +141,9 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data }) => {
-//  const Capability1 = data.capability1.childImageSharp.gatsbyImageData
-//  const Capability2 = data.capability2.childImageSharp.gatsbyImageData
-//  const Capability3 = data.capability3.childImageSharp.gatsbyImageData
+ const Capability1 = data.capability1.childImageSharp.gatsbyImageData
+ const Capability2 = data.capability2.childImageSharp.gatsbyImageData
+ const Capability3 = data.capability3.childImageSharp.gatsbyImageData
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
@@ -381,7 +381,7 @@ function Iframer() {
 
 
 
-<ReactPlayer
+{/* <ReactPlayer
             // ref={playerRef}
             width="100%"
             height="100%"
@@ -421,7 +421,7 @@ function Iframer() {
             </button>}
 
 
-          />
+          /> */}
           
 
           <div className="backdrop11" style={{position:'fixed', bottom:'0', border:'0px solid yellow', zIndex:'', height:'100%', width:'100vw', background:'rgba(0,0,0,0.0)', backdropFilter:'blur(2px)'  }}></div>
@@ -874,7 +874,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    {/* {Capability1 ? (
+    {Capability1 ? (
             <GatsbyImage
               image={Capability1}
               alt="Image Alt Text"
@@ -883,7 +883,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             />
           ) : (
             ""
-          )} */}
+          )}
     </a>
     {/* <br />
     Our menu is steep in the traditions of the great steakhouses of America, however at virtually every step we have added our own "Rack House style" flair. We focus on providing a fantastic steak. */}
@@ -893,7 +893,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
     
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
-    {/* {Capability2 ? (
+    {Capability2 ? (
             <GatsbyImage
               image={Capability2}
               alt="Image Alt Text"
@@ -902,7 +902,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             />
           ) : (
             ""
-          )} */}
+          )}
     </a>
     {/* <br />
     Our mezzanine level of the Rack House was designed to be a place to sit back in a comfy couch, leather chair, or at the bar with friends and enjoy a unique atmosphere and great libations. */}
@@ -912,7 +912,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
     <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
-    {/* {Capability3 ? (
+    {Capability3 ? (
             <GatsbyImage
               image={Capability3}
               alt="Image Alt Text"
@@ -921,7 +921,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
             />
           ) : (
             ""
-          )} */}
+          )}
     </a>
     {/* <br />
     Join the Bourbon Society and you get to enjoy plenty of perks such as a personalized decanter, exclusive access to coveted bourbons, monthly tastings and so much more! */}
@@ -975,7 +975,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
 <a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">
-  {/* <StaticImage src="../../static/assets/Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} /> */}
+  <StaticImage src="../../static/assets/Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
 </a>
 </div>
 <br /><br />
