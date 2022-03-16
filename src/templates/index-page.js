@@ -18,7 +18,7 @@ import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
 // import Controls from "../components/Controls";
 
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+// import { AnchorLink } from "gatsby-plugin-anchor-links"
 import Panel1 from "../components/panel1"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import Panel2 from "../pages/shawshank-trailer"
@@ -147,9 +147,9 @@ const HomePage = ({ data }) => {
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+  // const Image = frontmatter.featuredImage
+  //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+  //   : ""
 
     const SecondaryImage = frontmatter.secondaryImage
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData

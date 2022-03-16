@@ -78,7 +78,7 @@ const Contact = () => {
      
 <div style={{display:'flex', justifyContent:'space-around', alignItems:'center',}}>
 
-                    <label htmlFor="attachment1" style={{padding: '0', width: '50%', color: '#fff', display:'flex', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
+                    <label htmlFor="attachment1" style={{padding: '0', color: '#fff', display:'flex', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
                     
                     <input
                         className="file-input hidden"

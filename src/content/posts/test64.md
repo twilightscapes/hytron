@@ -24,7 +24,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/capability3.jpg
-svgImage: /assets/campfire.svg
+svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
