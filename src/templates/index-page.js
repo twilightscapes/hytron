@@ -410,7 +410,7 @@ function Iframer() {
 {ShowFeature ? (
 <>
 <div className="RArrow"><span></span></div>
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-35px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-30px'}}>
 
 
 
