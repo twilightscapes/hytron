@@ -31,8 +31,8 @@ const ProductDetails = () => (
 <Tabs className="infomenu" style={{minHeight:'20vh', width:'100%', maxWidth:'1000px', margin:'0 auto', overflow:'hidden', marginTop:'40px',}}>
         <h2 className="specialfont" style={{fontSize:'5vw', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
     <TabList style={{width:'100%', border:'0px solid yellow', padding:'0 1rem'}}>
-    <Tab><div className="iconmenu"><span>CNC Mills</span></div></Tab>
-    <Tab><div className="iconmenu"><span>CNC Lathes</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Mills</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Lathes</span></div></Tab>
     <Tab><div className="iconmenu"><span>Inspection</span></div></Tab>
     <Tab><div className="iconmenu"><span>Other</span></div></Tab>
       
