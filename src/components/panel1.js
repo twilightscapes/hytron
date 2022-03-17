@@ -122,7 +122,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ho
 
 <div style={{height:'100vh', width:'100vw', background:'#111', position:'fixed', top:'0', zIndex:'-1', backgroundSize:'cover'}}>
 <StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   />
+alt="Todd Lambert Web development for photographers" src="../../static/assets/generic.png"   />
 </div>
 
 <div style={{position:'absolute', top:'50px', width:'100vw', height:'', zIndex:'3'}}>
