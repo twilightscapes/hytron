@@ -410,7 +410,7 @@ function Iframer() {
 {ShowFeature ? (
 <>
 <div className="RArrow"><span></span></div>
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-40px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-35px'}}>
 
 
 
@@ -473,7 +473,24 @@ function Iframer() {
             
   
             <div style={{position:'absolute', width:'100vw', height:'100vh', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Hytron" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    {/* <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Hytron" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
+
+    <StaticImage loading="eager" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Twilightscapes Default Image" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+
+    {/* {Image ? (
+  <GatsbyImage
+              image={Image}
+              loading="eager"
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}}
+            />
+
+          ) : (
+          ""
+          )} */}
+
+
   </div> 
 
 
