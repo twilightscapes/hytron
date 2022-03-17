@@ -715,7 +715,7 @@ const svgUrl = frontmatter.svgImage.publicURL
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw',  top:'0', zIndex:'-2',  border:'2px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (
@@ -859,7 +859,7 @@ const svgUrl = frontmatter.svgImage.publicURL
           )}
 
           
-<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
+
 
 
 
@@ -876,6 +876,8 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 </div>
 
+
+<object className="" id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'', right:'', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
 
 
 
@@ -1060,7 +1062,7 @@ const svgUrl = frontmatter.svgImage.publicURL
 
 
 
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+{/* <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
 
 
       <div
@@ -1069,7 +1071,7 @@ const svgUrl = frontmatter.svgImage.publicURL
       />    
   
  
-</div>
+</div> */}
 
       
 

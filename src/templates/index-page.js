@@ -509,12 +509,13 @@ function Iframer() {
 
 
 
+<div style={{position:'absolute', objectFit:'', top:'0', display:'', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
           {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'0', zIndex:'', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'3px solid red !important', background:'#111', aspectRatio:'none'}}
             />
             
           ) : (
@@ -523,7 +524,7 @@ function Iframer() {
             <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-
+</div>
 
 
 

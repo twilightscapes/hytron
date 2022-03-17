@@ -24,7 +24,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/generic.png
-svgImage: /assets/logo.svg
+svgImage: /assets/Hytron.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
@@ -32,11 +32,18 @@ nftredeem: ""
 
 <!-- lYGald0tFro -->
 
+<div class="" style="display:flex; justify-content:center; gap:30px; width:100vw; height:80vh; position:absolute; top:30px; left:0; border:0px solid yellow; padding:0 3rem;">
 
-<div class="specialfont" style="display:flex; justify-content:center; font-size:6vw; width:100vw; height:; border:0px solid yellow; position:absolute; bottom:0; left:0; ">
-        <!-- <h2 class="">Coming Soon!</h2> -->
-      </div>
+<div class="" style="display:flex; flex-direction:column; width:50%; height:; border:0px solid yellow; position:relative; top:10px; left:0;	background: rgba(0,0,0,0.80); padding:1rem; margin:0 auto; border-radius:12px;">
+        <h2 class="">Coming Soon!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="" style="display:flex; flex-direction:column; font-size:; width:50%; height:; border:0px solid yellow; position:relative; top:10px; left:0;	background: rgba(0,0,0,0.80); padding:1rem; margin:0 auto; border-radius:12px;">
+        <h2 class="">Coming Soon!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+</div>
 
+</div>
 
 
 <!-- 6hB3S9bIaco -->

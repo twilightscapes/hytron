@@ -2,11 +2,11 @@
 slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
-featuredImage: /assets/transparent.png
+featuredImage: /assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg
 secondaryImage: /assets/secondary.jpg
 underlayImage: /assets/transparent.png
 showInfo: true
-youtuber: "https://youtu.be/JOMipAq7ZSk"
+youtuber: ""
 youtubeautostart: "1"
 youtubeloop: ""
 title: Hytron Manufacturing
@@ -28,3 +28,5 @@ youtubestart: ""
 <p>With our best-in-class capabilities, high quality standards and with our supply chain tracking system we can deliver your products in the most cost effective timely way. Today more than ever, we are looking for ways to deliver more value to our customers and our continued focus on manufacturing innovation allows us to do so.</p>
 
 <p>Let Hytron assist you with bringing your product to market.</p>
+
+<!-- https://youtu.be/JOMipAq7ZSk -->
