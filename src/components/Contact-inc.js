@@ -41,7 +41,7 @@ const Contact = class extends React.Component {
    
 <div style={{display:'flex', justifyContent:'space-around', alignItems:'center',}}>
 
-                  <label htmlFor="attachment1" style={{padding: '0', color: '#fff', display:'flex', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
+                  <label htmlFor="attachment1" style={{padding: '0', color: 'inherit', textShadow:'1px 1px 0 #555', display:'flex', width:'100%', fontSize:'90%', gap:'15px', justifyContent:'center', alignItems:'center'}}>
                   
                   <input
                       className="file-input hidden"

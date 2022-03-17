@@ -1,6 +1,7 @@
 
 import React from "react"
 // import React, { useRef } from "react";
+import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 // import { Link } from "gatsby"
@@ -119,7 +120,10 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ho
 </div> */}
 
 
-
+<div style={{height:'100vh', width:'100vw', background:'#111', position:'fixed', top:'0', zIndex:'-1', backgroundSize:'cover'}}>
+<StaticImage className=""
+alt="Todd Lambert Web development for photographers" src="../../static/assets/home-slider2.jpg"   />
+</div>
 
 <div style={{position:'absolute', top:'50px', width:'100vw', height:'', zIndex:'3'}}>
 {/* <RackLogo className="racklogo"  /> */}

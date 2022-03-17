@@ -602,7 +602,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 
-{Image ? (
+{/* {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -615,7 +615,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
    
             <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
-          )}
+          )} */}
 
 
 
@@ -893,7 +893,7 @@ Through NFT
       
 
  <div className="flexbutt noexit print" style={{padding:'0 4%',
-position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'10% auto 2rem auto', }}>
+position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'20% auto 2rem auto', }}>
 
 
 

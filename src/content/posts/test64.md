@@ -24,7 +24,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/transparent.png
-svgImage: /assets/null.svg
+svgImage: /assets/logo.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
@@ -34,7 +34,7 @@ nftredeem: ""
 
 
 <div class="specialfont" style="display:flex; justify-content:center; font-size:6vw; width:100vw; height:; border:0px solid yellow; position:absolute; bottom:0; left:0; ">
-        <h2 class="">Coming Soon!</h2>
+        <!-- <h2 class="">Coming Soon!</h2> -->
       </div>
 
 
