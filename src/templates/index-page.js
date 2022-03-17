@@ -471,7 +471,7 @@ function Iframer() {
      color: 'white',
       textAlign: 'center', 
       letterSpacing: '.0rem',
-      fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+      fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
       filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
       textShadow:'2px 2px 0 #333'
     }}
@@ -484,7 +484,7 @@ function Iframer() {
           style={{
             color: '#fff',
             textAlign: 'center', 
-            fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+            fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
             filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
             textShadow:'2px 2px 0 #333'
           }}
@@ -498,7 +498,7 @@ function Iframer() {
            color: 'white',
             textAlign: 'center',
             textTransform: 'normal', 
-            fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+            fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
             filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
             textShadow:'2px 2px 0 #333'
           }}
@@ -935,8 +935,25 @@ Through NFT
 
       
 
- <div className="flexbutt noexit print" style={{padding:'0 4%',
-position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'20% auto 2rem auto', }}>
+ 
+
+
+
+
+
+
+
+
+
+
+<div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'clamp(1rem, 8%, 15%)', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'20px auto 0 auto', maxWidth:'1600px'}}>
+
+
+
+
+
+<div className="flexbutt noexit print" style={{padding:'0',
+position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>
 
 
 
@@ -1009,10 +1026,6 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-
-
-
-<div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
 <h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
 
 <p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
@@ -1023,6 +1036,14 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <p>We have built a long standing reputation as a manufacturer of precision products that are field proven and time tested.  Contact one of our professionals for information on your specific manufacturing requirements.</p>
 </div>
+
+
+
+
+
+
+<Details id="equipmentlist" />
+
 
 
 
@@ -1044,7 +1065,7 @@ ISO 9001:2015 and AS9100D certified
 
 
 
-<Details id="equipmentlist" />
+
 
 
 
