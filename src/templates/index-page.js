@@ -12,7 +12,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 import BlogListHome from "../components/blog-list-home"
-import Newsignup from "../components/newssign"
+// import Newsignup from "../components/newssign"
 import Details from "../components/equipment-list"
 import Contact from "../components/Contact-inc"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
@@ -562,11 +562,11 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 <div></div>
 
 
-<div className="allin60panel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100%', margin:'0', background:''}}>
+{/* <div className="allin60panel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100%', margin:'0', background:''}}>
 <div style={{ width:'90vw', position:'relative', top:'', margin:'20px auto', padding:'4% 5%', zIndex:'3', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
   <Newsignup />
   </div>
-</div>
+</div> */}
 
 
 
@@ -990,7 +990,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
   <Link state={{modal: true}} to="Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" className="" style={{margin:'', textDecoration:'none'}}>
-  <StaticImage src="../../static/assets/generic.png" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
+  <StaticImage src="../../static/assets/iso-cert.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
 </Link>
 </div>
 <br /><br />
@@ -1018,7 +1018,7 @@ ISO 9001:2015 and AS9100D certified
 electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p>
 
 
-<h4>Learn More</h4>
+<h3>Learn More</h3>
 <p>With our experienced team and advanced manufacturing capabilities, we can become your perfect supply chain partner.</p>
 
 <p>Request a quote to learn more about our services.</p>

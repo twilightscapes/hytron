@@ -25,7 +25,7 @@ import styled from "styled-components"
 // import QuoraStand from "../../static/assets/quora-ass.png"
 // import KevinFlynn from "../../static/assets/kevin-flynn.png"
 // import TronChick from "../../static/assets/tron-chick1.svg"
-// import RackLogo from "../../static/assets/logointro.svg"
+import RackLogo from "../../static/assets/hytron-grid.svg"
 
 const CustomBox = styled.div`
 
@@ -126,7 +126,7 @@ alt="Todd Lambert Web development for photographers" src="../../static/assets/ge
 </div>
 
 <div style={{position:'absolute', top:'50px', width:'100vw', height:'', zIndex:'3'}}>
-{/* <RackLogo className="racklogo"  /> */}
+<RackLogo className="racklogo"  />
 
 
 <h1
