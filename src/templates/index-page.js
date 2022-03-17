@@ -215,7 +215,7 @@ const HomePage = ({ data }) => {
     function AddSvg(){
       const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
       return (
-        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100%',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" ></object>
+        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'-1', width:'100vw', height:'100vh',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" ></object>
       )
     }
 
@@ -224,7 +224,7 @@ const HomePage = ({ data }) => {
     const [state, setState] = useState({
       playing: true,
       controls: false,
-      light: false,
+      light: true,
       muted: true,
       loop: true,
     });
@@ -422,6 +422,27 @@ function Iframer() {
 <div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
 
 <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}>
+
+
+{/* <div style={{position:'absolute', objectFit:'', top:'0', zIndex:'-1', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
+          {Image ? (
+            <GatsbyImage
+              image={Image}
+              loading="eager"
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
+            />
+            
+          ) : (
+
+   
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+</div> */}
+
+
 <ReactPlayer
             ref={playerRef}
             width="100%"
@@ -445,27 +466,44 @@ function Iframer() {
               },
             }}
 
-          playsinline
+            playsinline
             playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'', zIndex:'5', bottom:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-  
-          <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+{/*   
+          <div className="" style={{ textAlign:'center', display:'flex', justifyContent:'center', flexDirection:'column', animation:'fadeIn 3s',}}> */}
             
   
-            <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-  </div>
+            <div style={{position:'absolute', width:'100vw', height:'100vh', top:'5px', margin:'0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+    <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="VidSock" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+  </div> 
+
+
+  {/* {Image ? (
+  <GatsbyImage
+              image={Image}
+              loading="eager"
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{height:'100vh', width:'100vw', maxHeight:'', position:'absolute', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
+            />
+
+          ) : (
+          ""
+          )} */}
+
         
-            <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-            </div>
+            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:'60%', height:'100vh'}}>Learn more about Hytron
+
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
+            {/* </div> */}
+
+
             </button>}
-
-
+        //  light="../assets/transparent.png"
           />
           
 
-          <div style={{position:'relative', padding:'10% 0', width:'', height:'', zIndex:'3'}}>
+          {/* <div style={{position:'relative', padding:'10% 0', width:'', height:'', zIndex:'3'}}>
 <h1
     className="lineOne"
     style={{
@@ -506,27 +544,11 @@ function Iframer() {
         >
          Done right AND on time
         </h3>
-</div>
+</div> */}
 
 
 
-<div style={{position:'absolute', objectFit:'', top:'0', display:'', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              loading="eager"
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
-            />
-            
-          ) : (
 
-   
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-</div>
 
 
 

@@ -2,15 +2,15 @@
 slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
-featuredImage: /assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg
+featuredImage: /assets/transparent.png
 secondaryImage: /assets/secondary.jpg
-underlayImage: /assets/transparent.png
+underlayImage: /assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg
 showInfo: true
-youtuber: ""
+youtuber: "https://youtu.be/JOMipAq7ZSk"
 youtubeautostart: "1"
 youtubeloop: ""
 title: Hytron Manufacturing
-svgImage: /assets/Hytron.svg
+svgImage: ""
 showPosts: true
 cta:
   ctaText: Request Quote
