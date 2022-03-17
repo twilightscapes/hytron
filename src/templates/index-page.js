@@ -102,17 +102,17 @@ export const pageQuery = graphql`
 
 
   
-    capability1: file(relativePath: { eq: "capability1.jpg" }) {
+    capability1: file(relativePath: { eq: "generic.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
       }
     }
-    capability2: file(relativePath: { eq: "capability2.jpg" }) {
+    capability2: file(relativePath: { eq: "generic.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
-    capability3: file(relativePath: { eq: "capability3.jpg" }) {
+    capability3: file(relativePath: { eq: "generic.png" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
@@ -990,7 +990,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
   <Link state={{modal: true}} to="Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" className="" style={{margin:'', textDecoration:'none'}}>
-  <StaticImage src="../../static/assets/Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
+  <StaticImage src="../../static/assets/generic.png" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
 </Link>
 </div>
 <br /><br />
