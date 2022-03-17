@@ -69,12 +69,12 @@ export function Layout({ children }) {
       
 <li className="grad" style={{position:'relative',}}>
         <AnchorLink className="navbar-item" to="/#iso" style={{paddingRight:'',}}>
-          About Us 
+          About <span className="mobilehide">Us</span> 
         </AnchorLink>
         </li>
       <li className="grad" style={{position:'relative',}}>
       <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
-        Our Capabilities 
+      <span className="mobilehide">Our</span> Capabilities 
       </AnchorLink>
       </li>
       <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
@@ -85,12 +85,12 @@ export function Layout({ children }) {
     </li>
       <li className="grad" style={{position:'relative',}}>
         <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
-          Industries Served 
+          Industries <span className="mobilehide">Served</span> 
         </AnchorLink>
         </li>
         <li className="grad" style={{position:'relative',}}>
         <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
-          Contact Us
+          Contact <span className="mobilehide">Us</span>
         </AnchorLink>
         </li>
       

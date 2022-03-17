@@ -401,35 +401,31 @@ function Iframer() {
 
 
 {/* VIDEO URLS */}
-
-
-
 {/* uCf3Q43fC_4 cool train */}
 
 
 
 
-
-
-{/* <HomeHolder /> */}
-
 {ShowFeature ? (
-
+<>
+<div className="RArrow"><span></span></div>
 <div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-40px'}}>
-{/* <div className="RArrow"><span></span></div> */}
-
-
-<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'85vh', position:'absolute', top:'0', zIndex:'', marginBottom:''}}>
 
 
 
+<div className="horizontal-scroll panels" style={{}}>
 
 
+
+
+<div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
+
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}>
 <ReactPlayer
             ref={playerRef}
             width="100%"
             height="100%"
-   
+            style={{position:'absolute', zIndex:'-1'}}
             url={YouTube}
             // url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
             playing={playing}
@@ -468,34 +464,7 @@ function Iframer() {
           />
           
 
-          
-          
-          
-          </div>
-
-
-
-          {/* <Controls
-            ref={controlsRef}
-            onPlayPause={handlePlayPause}
-            playing={playing}
-            played={played}
-            onMute={hanldeMute}
-            muted={muted}
-          />
-
-
-          {/* show feature */}
-        
-
-<div className="horizontal-scroll panels" style={{}}>
-
-
-
-<div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
-
-
-<div style={{position:'relative', padding:'10% 0', width:'100vw', height:'100%', zIndex:''}}>
+          <div style={{position:'relative', padding:'10% 0', width:'', height:'', zIndex:'3'}}>
 <h1
     className="lineOne"
     style={{
@@ -537,6 +506,55 @@ function Iframer() {
          Done right AND on time
         </h3>
 </div>
+
+
+
+          {Image ? (
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'0', zIndex:'', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+            />
+            
+          ) : (
+
+   
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+
+
+
+
+
+          
+          
+          </div>
+
+
+
+          {/* <Controls
+            ref={controlsRef}
+            onPlayPause={handlePlayPause}
+            playing={playing}
+            played={played}
+            onMute={hanldeMute}
+            muted={muted}
+          />
+
+
+          {/* show feature */}
+        
+
+
+
+
+
+
+
+
+
 
 
 {/* <div className="custom-cursor " style={{margin:'', height:'100%', textDecoration:'none'}}>
@@ -587,7 +605,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 </div>
-
+</>
 ) : (
   ""
 )}

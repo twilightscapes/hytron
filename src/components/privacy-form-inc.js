@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 // import { FaEnvelope } from 'react-icons/fa'
+import { Layout } from "../components/layout"
 
 
 // const Contact = class extends React.Component {
@@ -55,7 +56,9 @@ export default class Contact extends React.Component {
   }
 
   render() {
+    
     return (
+
       
         <section className="section">
           <div className="container1 innerpanel1" style={{padding: '0',}}>
@@ -415,7 +418,7 @@ export default class Contact extends React.Component {
                
 <div className="special2 grad"  style={{color:'#fff', textDecoration:'none', display:'flex', justifyContent:'center', position:'relative', width:'230px', margin:'0 auto', padding:'0 ',}}>
                 
-                <input type="submit" value="Submit" className=" grad" style={{background:'transparent', border:'none', color:'#fff', cursor:'pointer', margin:'0', padding:'0', width:'', float:'',}} />
+                <input type="submit" value="Submit Form" className="button specialfont2" style={{background:'', border:'', color:'', cursor:'pointer', margin:'', padding:'', width:'', float:'',}} />
        
                 
                 </div>
@@ -426,19 +429,10 @@ export default class Contact extends React.Component {
 </div>
 </div>    
                 
-<br />
-<br />
-<br />
-<br /><br />  
-<br />
-<br />
-<br /><br />
-<br />
-<br />
-<br /><br />
 
 
-        
+
+<div className="spacer66"></div>
                 
               </form>
               
@@ -446,6 +440,8 @@ export default class Contact extends React.Component {
           </div>
         </section>      
       
+
     )
   }
 }
+<Layout />

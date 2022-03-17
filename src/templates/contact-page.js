@@ -93,7 +93,7 @@ const Contact = () => {
             <button
               className="button specialfont1"
               type="submit"
-              style={{width:'50%', borderRadius:'8px'}}
+              style={{width:'50%'}}
             >
               Send Message{" "}
             </button>
