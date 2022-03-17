@@ -1085,6 +1085,9 @@ ISO 9001:2015 and AS9100D certified
 <div style={{display:'flex', justifyContent:'flex-start', alignItems:'', position:'relative', width:'100%', height:'100%'}}>
 <StaticImage src="../../static/assets/hytron-facility.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'relative', zIndex:'0', top:'', borderRadius:'12px', objectFit:'cover', margin:'1rem 0'}} />
 <Link state={{modal: true}} to="/location/"><StaticImage src="../../static/assets/map.png" alt="Twilightscapes Default Image" style={{height:'100%', position:'absolute', zIndex:'1', top:'5px', left:'20px', borderRadius:'12px', maxHeight:'15vh', maxWidth:'20vw', margin:'1rem 0', border:'2px solid #ff0000'}} /></Link>
+
+
+<Link className="button specialfont2" state={{modal: true}} to="/careers/" style={{position:'absolute', zIndex:'1', bottom:'5px', right:'20px',}}>CAREERS @ Hytron</Link>
 </div>
 
 
