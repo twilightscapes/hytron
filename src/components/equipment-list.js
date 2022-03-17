@@ -29,151 +29,101 @@ const ProductDetails = () => (
 
 
 <Tabs className="infomenu" style={{minHeight:'20vh', width:'100%', maxWidth:'1000px', margin:'0 auto', overflow:'hidden', marginTop:'40px',}}>
-        <h2 className="specialfont" style={{fontSize:'3vw', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
-    <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><span>CNC Mills  Total: 25</span></div></Tab>
-    <Tab><div className="iconmenu"><span>CNC Lathes  Total: 7</span></div></Tab>
-    <Tab><div className="iconmenu"><span>Inspection Equipment</span></div></Tab>
-    <Tab><div className="iconmenu"><span>Other Equipment</span></div></Tab>
+        <h2 className="specialfont" style={{fontSize:'5vw', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
+    <TabList style={{width:'100%', border:'0px solid yellow', padding:'0 1rem'}}>
+    <Tab><div className="iconmenu"><span>CNC Mills</span></div></Tab>
+    <Tab><div className="iconmenu"><span>CNC Lathes</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Inspection</span></div></Tab>
+    <Tab><div className="iconmenu"><span>Other</span></div></Tab>
       
       
     </TabList>
  
 
    <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-           <strong style={{fontSize:'1.5rem'}}>Specs</strong><br /><br />
-           <p>
-           Edited and production output to Tiff file format<br /> <br />
-           Typical file size 30-50MB<br /> <br />
-           Average dimensions range from 4988 × 3325 to 5481x3653 or greater<br /> <br />
-           All Twilightscapes are shot using the latest state-of-the-art equipment and lenses.
-           <br /><br />Canon 5D series, Sony A7R series and Sony A7S series.
-           </p>
+           <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 0 0'}}>CNC Mills – Total: 25</h2>
+   <div className="" style={{display:'flex', flexDirection:'column', gap:'2vh'}}>
+
+ {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .2)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+<li className="" style={{width:'50%', textAlign:''}}>(13) HAAS VF-2</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS VF-O</li>
+<li className="" style={{width:'50%', textAlign:''}}>(6) HAAS VF-OE</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS VF-4</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS VF-5</li>
+<li className="" style={{width:'50%', textAlign:''}}>(3) HAAS TM-1</li>
+</ul>
+</div>
            
     </TabPanel>
 
 
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%',}}>
-            <strong style={{fontSize:'1.5rem'}}>Secure and spam free</strong><br /><br />
-            <p>All transactions are secured using the latest 128-bit SSL encryption. <br />
-            <br />
-            Full PCI Compliance - Payment Card Industry Data Security Standard (PCI DSS)<br /> <br />
-            I value your privacy and will always put your security first on all accounts. <br /> <br />
-            </p>
+    <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 0 0'}}>CNC Lathes – Total: 7</h2>
+   <div className="" style={{display:'flex', flexDirection:'column', gap:'2vh'}}>
+ {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability3.jpg" style={{borderColor:'transparent',}} /> */}
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .2)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS SL-10 W/ Bar Feeder</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS SL-10</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS GT-10 W/ Bar Feeder</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) HAAS GT-10</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Hardinge T-42 W/ Bar Feeder</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Hardinge Cobra 42</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Hardinge HLV-H</li>
+</ul>
+</div>
 
     </TabPanel>
 
 
-    <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-    <strong style={{fontSize:'1.5rem'}}>Legal</strong><br /><br />
 
 
-<h3>There are two licensing options:</h3>
-<ol style={{margin:'1rem 3rem'}}>
-<li style={{}}>Personal Use License which includes printing rights. All use and restrictions are limited to private use only.</li>
-<br />
-<li style={{}}>Unlimited Royalty-Free License which includes all rights of the personal use plus commercial use.</li>
-</ol>
+     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
+           <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 0 0'}}>Inspection Equipment</h2>
+   <div className="" style={{display:'flex', flexDirection:'column', gap:'2vh'}}>
 
-<p style={{fontSize:'1.2rem', textAlign:'center', fontWeight:'bold'}}>That’s it.</p> 
-
-<blockquote className="frontquote" style={{width:'70%', margin:'0 auto'}}>
-<p>I believe art should be for everyone, not just snobby elite art collectors. It should be available to and priced for everyone. I just hope you enjoy the art.</p>
-<div style={{textAlign:'right', marginRight:'20%', marginTop:'10px'}}> – Todd
-</div></blockquote>
-
-           {/* <p>
-           Twilightscapes offers two types of license models: royalty-free ("RF") and rights-managed ("RM").</p>
-
-           <p>
-            Royalty-free means that the license fee is paid once and there is no need to pay additional royalties if the content is re-used. <br />Royalty-free content is licensed for worldwide, unlimited and perpetual use.</p>
-
-            <p>Rights-managed content is allowed to be printed in any format suited for private display. Rights-managed content cannot be distributed or used in public in any way that compromises Todd Lambert's abilities to resell the content.<br /><br />
-Rights-managed content is licensed for specific types of private use, and limits the use of the content to private use and display only.</p> */}
-
-            <p style={{textAlign:'center', fontSize:'130%', margin:'2rem 0',}}>
-              <Link to="/legal/" style={{color:'inherit'}}>View License Agreement</Link>
-            
-   
-           <br />
-
-            </p>
-
-
-
+ {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .2)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+<li className="" style={{width:'50%', textAlign:''}}>Tesa Micro-Hite CMM</li>
+<li className="" style={{width:'50%', textAlign:''}}>Brown &amp; Sharpe Gage 2000 CMM</li>
+<li className="" style={{width:'50%', textAlign:''}}>Scherr-Tumico Quadra-Check 200 Comparator</li>
+<li className="" style={{width:'50%', textAlign:''}}>Scheer-Tumico 14” Optical Comparator</li>
+<li className="" style={{width:'50%', textAlign:''}}>Rockwell Hardness Tester</li>
+<li className="" style={{width:'50%', textAlign:''}}>Surface Plates 24" x 48" Max</li>
+<li className="" style={{width:'50%', textAlign:''}}>Extensive line of Quality Measuring Equipment</li>
+</ul>
+</div>
            
     </TabPanel>
 
 
 
 
-    {/* <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-          <strong>Technology</strong><br /><br />
-          <p>
-          Twilightscapes were shot using: <br /><br />
-          Canon 5D series<br /><br />
-          Sony A7S series<br /><br />
-          Sony A7R series <br /><br />
-          </p>
-    </TabPanel> */}
-
-
-
     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
-            <strong style={{fontSize:'1.5rem'}}>FAQ</strong><br /><br />
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>So, what do I get?</p>
-            <p style={{}}>Upon completion of your purchase, you will receive a ZIP file that contains the original high-resolution image in TIFF format. </p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN I do with these images?</p>
-            <p style={{}}>Almost anything that you want. Print it for your house or office. Use it as a background or desktop for your phone, computer or TV. Make your holiday cards with it. Print it on your favorite coffee mug. You name it!</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What CAN’T I do with these images?</p>
-            <p style={{}}>Basically, don’t be a Dick or a Karen. I am providing high-quality images that cost considerable amounts of both time and money to acquire. I offer these for a low price to encourage people to enjoy my art. <strong>Please don't share the images on the Internet.</strong></p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I get the file right away?</p>
-            <p style={{}}>Yes, upon completion of transaction</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What if I lose the file, can I get another copy?</p>
-            <p style={{}}>Yes, you can retrieve the original file at any time. You will be sent an email with a link to retrieve.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>What about prints?</p>
-            <p style={{}}>I do offer exclusive hand-crafted prints for special circumstances - contact me with your needs if you’re interested. Otherwise, I provide two links to the best printer options available on the upper right-side of the photo pages. The links are affiliate links which provide me a portion of any sales, so I encourage you to print with these services.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>NFTs and image exclusivity</p>
-            <p style={{}}>If you wish to buy all rights to an image (exclusivity), all of my images are available for purchase in a non-fungible token version with the transfer of all ownership and the original RAW file included. The image will also be removed from further sales and retired.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Is there a watermark?</p>
-            <p style={{}}>No, it is removed on delivery</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I print this for my office?</p>
-            <p style={{}}>Yes.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I print multiple copies?</p>
-            <p style={{}}>Yes, if they are for your private use and enjoyment. No, if you want to print them for sale, or for something that relates to being sold or given away.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Can I post it on Facebook or any where online?</p>
-            <p style={{}}>Simply answered, No. These images are for your private use and enjoyment only. I make my living on selling these images, so if you provide that to others, it then hurts my ability to further sell those images.</p>
-
-            <p style={{fontWeight:'bold', marginBottom:'0'}}>Do I own this photo, copyright or can I claim it as mine?</p>
-            <p style={{}}>No, the intellectual rights and copyrights are not transferred in any way and will remain the property of Todd Lambert.</p>
-
-            
-
-            
-
-            {/* <p style={{fontWeight:'bold'}}></p>
-            <p style={{}}></p> */}
-
-
-
-
+    <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 0 0'}}>Other Equipment</h2>
+    <ul className="splitRow" style={{background:'rgba(0, 0, 0, .2)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+<li className="" style={{width:'50%', textAlign:''}}>(2) Doall Bandsaw C-916A</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Doall Vertical Band</li>
+<li className="" style={{width:'50%', textAlign:''}}>(2) Crest Ultrasonic Parts Cleaner</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) K.O. Lee Tool Grinder</li>
+<li className="" style={{width:'50%', textAlign:''}}>(2) Vector 200 Extrude Hone Machine</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Extrude Hone Coolpulse 200 Polishing Machine</li>
+<li className="" style={{width:'50%', textAlign:''}}>(2) Trinco Sand Blast Machine</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) 18” vibratory tumbler</li>
+<li className="" style={{width:'50%', textAlign:''}}>(1) Webvend Automated Tool Crib</li>
+<li className="" style={{width:'50%', textAlign:''}}>(2) Universal Laser Marking Machine</li>
+<li className="" style={{width:'50%', textAlign:''}}>Bench and pedestal grinding and buffing machines</li>
+</ul>
     </TabPanel>
 
 
-   
 
+    
+
+
+   
+<br />
   </Tabs>
 
 

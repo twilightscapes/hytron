@@ -79,7 +79,7 @@ export const pageQuery = graphql`
         }
         secondaryImage {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+            gatsbyImageData(placeholder: BLURRED, width: 800)
           }
         }
         underlayImage {
@@ -587,7 +587,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 {ShowPosts ? (
-        <BlogListHome data={posts} />
+        <BlogListHome data={posts} style={{}} />
    ) : (
     ""
   )}
@@ -816,7 +816,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
  
 
 
- <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'50vh', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
+ <div style={{margin:'0 30px', zIndex:'', borderRadius:'12px', maxHeight:'', overflow:'', position:'relative', display:'', justifyContent:'', alignItems:'', flexDirection:'column'}}>
    
 
 
@@ -828,7 +828,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px !important', position:'absolute', backgroundSize:'cover', objectFit:'cover', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px', position:'', backgroundSize:'', objectFit:'', top:'0', zIndex:'0'}}
             />
           ) : (
             ""

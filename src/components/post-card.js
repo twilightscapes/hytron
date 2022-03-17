@@ -46,7 +46,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'relative', }}
+    style={{display:'flex', flexDirection:'column', gap:'', alignItems:'', justifyContent:'', width:'100%', height:'', overflow:'', position:'relative', }}
   >
 
 
@@ -60,7 +60,7 @@ const PostCard = ({ data }) => (
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
-          style={{position:'relative', zIndex:'1'}}
+          style={{position:'relative', zIndex:'1', maxHeight:'400px'}}
         />
         <div
               style={{
@@ -78,7 +78,7 @@ const PostCard = ({ data }) => (
               }}
            >
 
-           <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+           {/* <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
     <g fill="none" fillRule="evenodd">
         <g transform="translate(1 1)" strokeWidth="2">
             <circle strokeOpacity=".5" cx="18" cy="18" r="18"/>
@@ -93,7 +93,7 @@ const PostCard = ({ data }) => (
             </path>
         </g>
     </g>
-</svg>
+</svg> */}
         </div>
       </Link>
       
@@ -103,7 +103,7 @@ const PostCard = ({ data }) => (
     )}
 
 
-<div className="post-content" >
+<div className="post-content" style={{ border:'0px solid'}}>
 
 
 
