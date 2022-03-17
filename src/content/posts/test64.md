@@ -23,8 +23,8 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/transparent.png
-svgImage: /assets/null.svg
+featuredImage: /assets/generic.png
+svgImage: /assets/logo.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""

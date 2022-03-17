@@ -58,6 +58,9 @@ export function Layout({ children }) {
   </ModalRoutingContext.Consumer>
 
 
+  
+
+
 
 <header name="pagetop" style={{}} >
 
@@ -237,8 +240,13 @@ This is 2nd menu
      {/* <Install /> */}
       {/* <Footer /> */}
       
+
+      
+
       </>
     </div>
+
+
     
   )
 }

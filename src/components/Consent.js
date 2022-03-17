@@ -2,7 +2,7 @@
 import * as React from "react"
 // import { navigate } from 'gatsby-link'
 // import { FaEnvelope } from 'react-icons/fa';
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import CookieConsent from "react-cookie-consent";
 // import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -13,9 +13,9 @@ const Consent = () => (
 
 <CookieConsent
     id="sitepref"
-	debug={false}
+	debug={true}
 	location="none"
-	style={{ opacity:'1', padding:'0 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'0', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', color:'#fff', background:'',
+	style={{ opacity:'.8', padding:'3%', margin:'0 10%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'1', display:'flex', alignContent:'center', width:'80%', justifyContent:'center', color:'#fff', background:'#111',
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
@@ -38,8 +38,8 @@ const Consent = () => (
 
     <div style={{color:'inherit', padding:'0 0 0 0', fontSize:'100%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
-    <span style={{ fontSize: "75%", color:'inherit' }}>
-   <a className="donotsell" href="/privacy/">Do Not Sell My Personal Information</a>
+    <span style={{ fontSize: "75%", color:'inherit', textDecoration:'underline' }}>
+   <Link state={{modal: true}} className="donotsell" to="/privacy/">Do Not Sell My Personal Information</Link>
     </span>
     </div>
     
