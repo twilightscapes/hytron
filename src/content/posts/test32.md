@@ -23,7 +23,7 @@ svgzindex: "0"
 comments: ""
 shareable: ""
 underlayImage: /assets/transparent.png
-featuredImage: /assets/generic.png
+featuredImage: /assets/clayton-cardinalli-hOLe72JN37I-unsplash.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""

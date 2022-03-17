@@ -23,7 +23,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/generic.png
+featuredImage: /assets/micro-seals.jpg
 svgImage: /assets/Hytron.svg
 nftlink: ""
 nftdrop: ""

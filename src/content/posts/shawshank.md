@@ -23,7 +23,7 @@ svgzindex: "0"
 comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/generic.png
+featuredImage: /assets/medical-partners.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""

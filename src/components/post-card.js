@@ -46,7 +46,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card"
-    style={{display:'flex', flexDirection:'column', gap:'', alignItems:'', justifyContent:'', width:'100%', height:'', overflow:'', position:'relative', }}
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'100vh', position:'relative', }}
   >
 
 
@@ -60,7 +60,7 @@ const PostCard = ({ data }) => (
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
-          style={{position:'relative', zIndex:'1', maxHeight:'400px'}}
+          style={{position:'relative', zIndex:'1'}}
         />
         <div
               style={{
@@ -103,7 +103,7 @@ const PostCard = ({ data }) => (
     )}
 
 
-<div className="post-content" style={{ border:'0px solid'}}>
+<div className="post-content" >
 
 
 
