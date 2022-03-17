@@ -513,9 +513,10 @@ function Iframer() {
           {Image ? (
             <GatsbyImage
               image={Image}
+              loading="eager"
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'3px solid red !important', background:'#111', aspectRatio:'none'}}
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
             />
             
           ) : (
@@ -529,7 +530,12 @@ function Iframer() {
 
 
 
-          
+{Svg ? (
+            <AddSvg />
+       
+          ) : (
+            ""
+          )}
           
           </div>
 
@@ -1009,7 +1015,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 <div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
 <h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
 
-<p>Hytron’s Quality Management System (QMS) is <a style={{color:' rgb(219, 38, 0)'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
+<p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
 
 <p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
 

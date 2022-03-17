@@ -10,7 +10,7 @@ youtuber: ""
 youtubeautostart: "1"
 youtubeloop: ""
 title: Hytron Manufacturing
-svgImage: /assets/hytron-grid.svg
+svgImage: /assets/Hytron.svg
 showPosts: true
 cta:
   ctaText: Request Quote
