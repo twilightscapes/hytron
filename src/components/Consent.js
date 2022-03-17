@@ -15,7 +15,7 @@ const Consent = () => (
     id="sitepref"
 	debug={true}
 	location="none"
-	style={{ opacity:'.8', padding:'3%', margin:'0 10%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'1', display:'flex', alignContent:'center', width:'80%', justifyContent:'center', color:'#fff', background:'#111',
+	style={{ opacity:'.8', padding:'3%', margin:'0 10%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'2', display:'flex', alignContent:'center', width:'80%', justifyContent:'center', color:'#fff', background:'#111',
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
