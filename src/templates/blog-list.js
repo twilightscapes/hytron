@@ -71,7 +71,7 @@ const Pagination = props => (
 
 
   <div className="pagination" sx={styles.pagination} style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
-    <h1>TRON In 60 Seconds - Minutes:</h1>
+    <h1>Archive of Posts:</h1>
     <ul style={{background:'#222', width:'80vw', position:'relative', top:'', margin:'0 auto', padding:'0 10%', zIndex:'1', textAlign:'', borderRadius:'12px', textDecoration:'none'}}>
       {!props.isFirst && (
         <li style={{}}>

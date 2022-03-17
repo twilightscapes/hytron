@@ -18,6 +18,7 @@ import Contact from "../components/Contact-inc"
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 // import BackgroundImage from 'gatsby-background-image'
 // import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
@@ -102,17 +103,17 @@ export const pageQuery = graphql`
 
 
   
-    capability1: file(relativePath: { eq: "generic.png" }) {
+    capability1: file(relativePath: { eq: "measurement.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
       }
     }
-    capability2: file(relativePath: { eq: "generic.png" }) {
+    capability2: file(relativePath: { eq: "front-building.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
     }
-    capability3: file(relativePath: { eq: "generic.png" }) {
+    capability3: file(relativePath: { eq: "facilities.jpg" }) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
       }
@@ -214,7 +215,7 @@ const HomePage = ({ data }) => {
     function AddSvg(){
       const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
       return (
-        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
+        <object title="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', left:'0', right:'0', top:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100%',  }} alt="Animation: Milky Way rotating over Todd Lambert while he is camping in front of a campfire" >You need a new browser</object>
       )
     }
 
@@ -949,7 +950,7 @@ Through NFT
 <div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'clamp(1rem, 8%, 15%)', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'20px auto 0 auto', maxWidth:'1600px'}}>
 
 
-
+<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}>Our Capabilities</h2>
 
 
 <div className="flexbutt noexit print" style={{padding:'0',
@@ -962,8 +963,8 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
-    <a className="noexit" href="https://toddlambert.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+<div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:''}}>
+    <AnchorLink className="" to="#iso" style={{textDecoration:'none', textAlign:'center', color:'inherit',}}>
     {Capability1 ? (
             <GatsbyImage
               image={Capability1}
@@ -974,15 +975,16 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-    </a>
+          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>ISO 9001 Certified</div>
+    </AnchorLink>
     {/* <br />
     Our menu is steep in the traditions of the great steakhouses of America, however at virtually every step we have added our own "Rack House style" flair. We focus on providing a fantastic steak. */}
     </div>
 
 
     
-    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
-    <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:''}}>
+    <AnchorLink className="" to="#about" style={{textDecoration:'none', color:'inherit',}}>
     {Capability2 ? (
             <GatsbyImage
               image={Capability2}
@@ -993,15 +995,17 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-    </a>
+          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>
+            Learn About Hytron</div>
+    </AnchorLink>
     {/* <br />
     Our mezzanine level of the Rack House was designed to be a place to sit back in a comfy couch, leather chair, or at the bar with friends and enjoy a unique atmosphere and great libations. */}
     </div>
 
 
 
-    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:'none'}}>
-    <a className="noexit" href="https://vidsocks.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
+    <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'flex-start', pointerEvents:''}}>
+    <AnchorLink className="" to="#equipmentlist" style={{textDecoration:'none', color:'inherit'}}>
     {Capability3 ? (
             <GatsbyImage
               image={Capability3}
@@ -1012,7 +1016,9 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-    </a>
+          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>
+            Our Equipment List</div>
+    </AnchorLink>
     {/* <br />
     Join the Bourbon Society and you get to enjoy plenty of perks such as a personalized decanter, exclusive access to coveted bourbons, monthly tastings and so much more! */}
     </div>
@@ -1028,7 +1034,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
 
-<p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
+<p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
 
 <p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
 
@@ -1042,8 +1048,9 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<Details id="equipmentlist" />
-
+<div id="equipmentlist" className="specialfont2" style={{textAlign:'',  margin:'10vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw',}}>
+<Details />
+</div>
 
 
 
@@ -1053,9 +1060,9 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
-  <Link state={{modal: true}} to="Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" className="" style={{margin:'', textDecoration:'none'}}>
+  <a href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" target="_blank" className="" style={{margin:'', textDecoration:'none'}}>
   <StaticImage src="../../static/assets/iso-cert.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
-</Link>
+</a>
 </div>
 <br /><br />
 
@@ -1068,13 +1075,44 @@ ISO 9001:2015 and AS9100D certified
 
 
 
+<div id="about" className="" style={{textAlign:'',  margin:'10vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}>
+
+
+<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}> About Hytron</h2>
+
+
+
+<div style={{display:'flex', justifyContent:'flex-start', alignItems:'', position:'relative', width:'100%', height:'100%'}}>
+<StaticImage src="../../static/assets/hytron-facility.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'relative', zIndex:'0', top:'', borderRadius:'12px', objectFit:'cover', margin:'1rem 0'}} />
+<Link state={{modal: true}} to="/location/"><StaticImage src="../../static/assets/map.png" alt="Twilightscapes Default Image" style={{height:'100%', position:'absolute', zIndex:'1', top:'5px', left:'20px', borderRadius:'12px', maxHeight:'15vh', maxWidth:'20vw', margin:'1rem 0', border:'2px solid #ff0000'}} /></Link>
+</div>
+
+
+
+<h3 style={{margin:'1rem 0'}}>Hytron Manufacturing Inc.</h3>
+
+
+
+<p>Founded in 1963, Hytron manufactures superior quality precision metal components to some of the most diverse industries in the global marketplace throughout the world. We utilize the latest in computer integrated manufacturing technology to ensure the highest level of precision, quality and efficiency in conformance with customer requirements.</p>
+
+
+<p>Hytron Manufacturing produces a wide variety of products ranging from complex machined components to multi-part, custom engineered fabrications and assemblies. We specialize in high precision mill and lathe work at our 13,000 square foot state-of-the-art manufacturing facility.</p>
+
+<p>For over 55 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
+</div>
 
 
 
 
 
-<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'',padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
-<h2 style={{fontSize:'3vw'}}>How can Hytron help your company?</h2>
+
+
+
+
+
+
+<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
+<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}>How can Hytron help your company?</h2>
 
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
 

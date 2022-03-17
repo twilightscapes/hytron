@@ -68,7 +68,7 @@ export function Layout({ children }) {
       
       
 <li className="grad" style={{position:'relative',}}>
-        <AnchorLink className="navbar-item" to="/#iso" style={{paddingRight:'',}}>
+        <AnchorLink className="navbar-item" to="/#about" style={{paddingRight:'',}}>
           About <span className="mobilehide">Us</span> 
         </AnchorLink>
         </li>
