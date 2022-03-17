@@ -5,7 +5,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import CookieConsent from "react-cookie-consent";
 // import ScrollAnimation from 'react-animate-on-scroll'
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Consent = () => (
 
@@ -13,7 +13,7 @@ const Consent = () => (
 
 <CookieConsent
     id="sitepref"
-	debug={true}
+	debug={false}
 	location="none"
 	style={{ opacity:'.8', padding:'3%', margin:'0 10%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'2', display:'flex', alignContent:'center', width:'80%', justifyContent:'center', color:'#fff', background:'#111',
    }}
@@ -39,7 +39,7 @@ const Consent = () => (
     <div style={{color:'inherit', padding:'0 0 0 0', fontSize:'100%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "75%", color:'inherit', textDecoration:'underline' }}>
-   <Link state={{modal: true}} className="donotsell" to="/privacy/">Do Not Sell My Personal Information</Link>
+   <AnchorLink state={{modal: true}} className="donotsell" to="/privacy#ccpa">Do Not Sell My Personal Information</AnchorLink> | <Link state={{modal: true}} to="/cookie-policy/" style={{color:'#fff',}}>Cookie Policy</Link>
     </span>
     </div>
     

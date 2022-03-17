@@ -1,11 +1,11 @@
-import React from "react"
-// import React, { useState, useRef } from "react";
+// import React from "react"
+import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
-// import ReactPlayer from 'react-player/lazy'
+import ReactPlayer from 'react-player/lazy'
 import { Layout } from "../components/layout"
 import { Footer } from "../components/footer";
 import { Seo } from "../components/seo"
-// import { ImPlay } from "react-icons/im"
+import { ImPlay } from "react-icons/im"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 // import Controls from "../components/Controls";
@@ -19,7 +19,7 @@ import Contact from "../components/Contact-inc"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import BackgroundImage from 'gatsby-background-image'
-import Panel1 from "../components/panel1"
+// import Panel1 from "../components/panel1"
 // import Panel2 from "../pages/shawshank-trailer"
 
 
@@ -191,11 +191,11 @@ const HomePage = ({ data }) => {
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
-    // const YouTubeStart = frontmatter.youtubestart
-    // const YouTubeEnd = frontmatter.youtubeend
-    // const YouTubeMute = frontmatter.youtubemute
-    // const YouTubeControls = frontmatter.youtubecontrols
-    // const YouTubeAutostart = frontmatter.youtubeautostart
+    const YouTubeStart = frontmatter.youtubestart
+    const YouTubeEnd = frontmatter.youtubeend
+    const YouTubeMute = frontmatter.youtubemute
+    const YouTubeControls = frontmatter.youtubecontrols
+    const YouTubeAutostart = frontmatter.youtubeautostart
 
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
@@ -220,28 +220,28 @@ const HomePage = ({ data }) => {
 
 
 
-    // const [state, setState] = useState({
-    //   playing: true,
-    //   controls: false,
-    //   light: false,
-    //   muted: true,
-    //   loop: true,
-    // });
-    // const playerRef = useRef(null);
-    // const controlsRef = useRef(null);
+    const [state, setState] = useState({
+      playing: true,
+      controls: false,
+      light: false,
+      muted: true,
+      loop: true,
+    });
+    const playerRef = useRef(null);
+    const controlsRef = useRef(null);
     
-    // const {
-    //   playing,
-    //   controls,
-    //   light,
-    //   muted,
-    //   loop,
-    //   playbackRate,
-    //   pip,
-    //   played,
-    //   seeking,
-    //   volume,
-    // } = state;
+    const {
+      playing,
+      controls,
+      light,
+      muted,
+      loop,
+      // playbackRate,
+      // pip,
+      // played,
+      // seeking,
+      // volume,
+    } = state;
     
     // const handlePlayPause = () => {
     //   setState({ ...state, playing: !state.playing });
@@ -251,7 +251,7 @@ const HomePage = ({ data }) => {
     //   setState({ ...state, muted: !state.muted });
     // };
     
-    // const { iconimage } = useSiteMetadata()
+    const { iconimage } = useSiteMetadata()
 
  
 
@@ -271,46 +271,46 @@ else{
 function Iframer() {
   
 
-//   const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
-//   return (
-//     <ReactPlayer
-//     className='react-player66'
-//     url={Url}
+  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+  return (
+    <ReactPlayer
+    className='react-player66'
+    url={Url}
     
-//     // url={[
-//     //   iframeUrl,
-//     //   YoutuberSuggestion1,
-//     //   YoutuberSuggestion2,
-//     //   YoutuberSuggestion3
-//     // ]}
-//     width="100%"
-//     height="100%"
+    // url={[
+    //   iframeUrl,
+    //   YoutuberSuggestion1,
+    //   YoutuberSuggestion2,
+    //   YoutuberSuggestion3
+    // ]}
+    width="100%"
+    height="100%"
 
-//     config={{
-//       youtube: {
-//         playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
-//       },
-//     }}
-//     loop
-//     playing
-//     playsinline
-// //       playIcon={
-// //         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+    config={{
+      youtube: {
+        playerVars: { showinfo:1, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute  }
+      },
+    }}
+    loop
+    playing
+    playsinline
+      playIcon={
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
-// //     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
     
 
-// //       <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-// // <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-// // </div>
+      <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+</div>
 
-// //       <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-// // <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-// //       </div>
-// //       </button>}
-// //         light="../assets/transparent.png"
-//     />
-//   )
+      <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      </div>
+      </button>}
+        light="../assets/transparent.png"
+    />
+  )
 }
 
 
@@ -413,23 +413,25 @@ function Iframer() {
 
 {/* <HomeHolder /> */}
 
-<div id="top" className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc' }}>
+{ShowFeature ? (
+
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-40px'}}>
 {/* <div className="RArrow"><span></span></div> */}
 
 
-{/* <div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'70vh', position:'absolute', top:'0', zIndex:''}}> */}
+<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'85vh', position:'absolute', top:'0', zIndex:'', marginBottom:''}}>
 
 
 
 
 
-{/* <ReactPlayer
-            // ref={playerRef}
+<ReactPlayer
+            ref={playerRef}
             width="100%"
             height="100%"
    
-            // url={iframeUrl}
-            url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
+            url={YouTube}
+            // url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
             playing={playing}
             controls={controls}
             light={light}
@@ -463,13 +465,13 @@ function Iframer() {
             </button>}
 
 
-          /> */}
+          />
           
 
           
           
           
-          {/* </div> */}
+          </div>
 
 
 
@@ -480,53 +482,68 @@ function Iframer() {
             played={played}
             onMute={hanldeMute}
             muted={muted}
-          /> */}
+          />
 
-          
+
+          {/* show feature */}
+        
+
 <div className="horizontal-scroll panels" style={{}}>
 
 
 
 <div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
-{/* <div></div> */}
 
 
+<div style={{position:'relative', padding:'10% 0', width:'100vw', height:'100%', zIndex:''}}>
+<h1
+    className="lineOne"
+    style={{
+     color: 'white',
+      textAlign: 'center', 
+      letterSpacing: '.0rem',
+      fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+      filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
+      textShadow:'2px 2px 0 #333'
+    }}
+  >
+    Quality Manufacturing
+  </h1>
 
-{/* <GridLoader /> */}
+<h2
+          className="boom3 normal txtshadow-header lineTwo"
+          style={{
+            color: '#fff',
+            textAlign: 'center', 
+            fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+            filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
+            textShadow:'2px 2px 0 #333'
+          }}
+        >
+         Precision Parts
+        </h2>
 
-
-{/* <div id="homestart"><Panel1 /></div> */}
-
-{/* <BackgroundImage
-      Tag="section"
-      className=""
-      fluid={imageData}
-      backgroundColor={`#111`}
-      style={{}}
-     >
-
-
-
-
-<div className="donation2" style={{display:'grid',
-  placeContent:'center', width:'100vw', height:'100vh', justifyContent:'center', position:'relative', background:'rgba(0,0,0,0.50)', webkitBackdropFilter:'blur(10px)', backdropFilter:'blur(14px)'}}>
-
-  <h1 className="tronText " style={{fontSize:'7vw', padding:'3vh 5vw 20vh 5vw', position:'', top:'', border:'0px solid', diplay:'', placeContent:'center', maxWidth:'80vw', fontFamily:'inherit'}}><div className="lineOne">All that's cool </div> <div className="lineTwo">in 60 seconds</div><br /><span style={{fontSize:'2rem'}}>allin60.com</span></h1>
-  
+<h3
+          className="boom4 txtshadow-header mobile-txt lineThree"
+          style={{
+           color: 'white',
+            textAlign: 'center',
+            textTransform: 'normal', 
+            fontSize:'clamp(2rem, 3.5vw, 3.8rem)',
+            filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
+            textShadow:'2px 2px 0 #333'
+          }}
+        >
+         Done right AND on time
+        </h3>
 </div>
-</BackgroundImage> */}
 
 
-
-<div className="custom-cursor " style={{margin:'', height:'100%', textDecoration:'none'}}>
+{/* <div className="custom-cursor " style={{margin:'', height:'100%', textDecoration:'none'}}>
 
   <Panel1 />
 
-</div>
-
-
-
-
+</div> */}
 
 
 {/* <div>
@@ -557,10 +574,8 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
     ""
   )}
 
- 
-
-<div></div>
-
+<div>
+</div>
 
 {/* <div className="allin60panel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100%', margin:'0', background:''}}>
 <div style={{ width:'90vw', position:'relative', top:'', margin:'20px auto', padding:'4% 5%', zIndex:'3', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
@@ -568,12 +583,15 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
   </div>
 </div> */}
 
-
-
+</div>
 
 
 </div>
-</div>
+
+) : (
+  ""
+)}
+
 
 
 

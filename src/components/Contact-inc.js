@@ -54,7 +54,7 @@ const Contact = class extends React.Component {
                     </label>
 
           <button
-            className="button"
+            className="button specialfont1"
             type="submit"
             style={{width:'50%'}}
           >

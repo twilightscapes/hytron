@@ -91,9 +91,9 @@ const Contact = () => {
                       </label>
 
             <button
-              className="button"
+              className="button specialfont1"
               type="submit"
-              style={{width:'50%'}}
+              style={{width:'50%', borderRadius:'8px'}}
             >
               Send Message{" "}
             </button>

@@ -3,7 +3,7 @@ import { Seo } from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
-
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
 import Bug from "../../static/assets/logo.svg"
@@ -11,14 +11,14 @@ import SiteLogo from "../../static/assets/logo.svg"
 
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-// import Theme from "../components/theme"
+import Theme from "../components/theme"
 
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
-// import { useSiteMetadata } from "../hooks/use-site-metadata"
-// import Install from './install-discount'
+
+import Install from './install-discount'
 // import { navigate } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+
 export function Layout({ children }) {
 
   // const { iconimage } = useSiteMetadata()
@@ -33,93 +33,94 @@ export function Layout({ children }) {
   return (
     <div style={{display:''}}> 
 <>
-      <Seo />
+<Seo />
 
-      <ModalRoutingContext.Consumer closeTimeoutMS={300} >
-    {({ modal, closeTo }) => (
-      <div style={{overflow:''}}>
-        {modal ? (
-          <>
-          <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
-          <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
-            <AiOutlineClose />
-            {/* <span className="TRON">[</span> */}
-            
-            {/* <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span> */}
-          </Link>
-          </div>
-          </>
-        ) : (
+<ModalRoutingContext.Consumer closeTimeoutMS={300} >
+{({ modal, closeTo }) => (
+<div style={{overflow:''}}>
+  {modal ? (
+    <>
+    <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
+    <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
+      <AiOutlineClose />
+      {/* <span className="TRON">[</span> */}
+      
+      {/* <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span> */}
+    </Link>
+    </div>
+    </>
+  ) : (
 ''
-        )}
+  )}
 
-      </div>
-    )}
-  </ModalRoutingContext.Consumer>
-
-
-  
+</div>
+)}
+</ModalRoutingContext.Consumer>
 
 
 
-<header name="pagetop" style={{}} >
+
+
+
+<header id="top" name="pagetop" style={{}} >
 
 <ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(1rem, 2.3vw, 2.5rem)', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', paddingRight:'1rem', alignItems:'center'}}>
-            
-            
+      
+      
 <li className="grad" style={{position:'relative',}}>
-              <AnchorLink className="navbar-item" to="/#iso" style={{paddingRight:'',}}>
-                About Us 
-              </AnchorLink>
-              </li>
-            <li className="grad" style={{position:'relative',}}>
-            <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
-              Our Capabilities 
-            </AnchorLink>
-            </li>
-            <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
-            <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
-            <SiteLogo style={{maxHeight:'60px'}} />
-            {/* <img className="" src={iconimage} alt="Logo" style={{maxHeight:'60px'}} /> */}
-            </AnchorLink>
-          </li>
-            <li className="grad" style={{position:'relative',}}>
-              <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
-                Industries Served 
-              </AnchorLink>
-              </li>
-              <li className="grad" style={{position:'relative',}}>
-              <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
-                Contact Us
-              </AnchorLink>
-              </li>
-            
-           
+        <AnchorLink className="navbar-item" to="/#iso" style={{paddingRight:'',}}>
+          About Us 
+        </AnchorLink>
+        </li>
+      <li className="grad" style={{position:'relative',}}>
+      <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
+        Our Capabilities 
+      </AnchorLink>
+      </li>
+      <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
+      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
+      <SiteLogo style={{maxHeight:'60px'}} />
+      {/* <img className="" src={iconimage} alt="Logo" style={{maxHeight:'60px'}} /> */}
+      </AnchorLink>
+    </li>
+      <li className="grad" style={{position:'relative',}}>
+        <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
+          Industries Served 
+        </AnchorLink>
+        </li>
+        <li className="grad" style={{position:'relative',}}>
+        <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+          Contact Us
+        </AnchorLink>
+        </li>
+      
+     
 
-            </ul>
+      </ul>
 
-<label htmlFor="openSidebarMenu" className="backdrop1" >
+
+
       <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
- </label>
-{/* <div id="secondMenu" className="" style={{marginTop:'5rem'}}>
+
+<div id="secondMenu" className="" style={{marginTop:'5rem'}}>
 <ul className="sidebarMenuInner post-card" style={{}}>
-<Install />
-<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
+{/* <Install /> */}
+{/* <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
 Woot
 </li>
 <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
 This is 2nd menu
-</li>
+</li> */}
 
 </ul>
-</div> */}
+</div>
 
- 
+  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue', display:'none'}}>
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
 {/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
-<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%' }}/> 
+<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/> 
 {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
 </div>
   </label>
@@ -141,74 +142,70 @@ This is 2nd menu
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
     <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
+    <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'0px solid'}}></Link>
 <SiteLogo />
  </li>
 
 
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Our Menu
-
-        </Link>
-</li>
-
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Weekend Brunch
-
-        </Link>
-</li>
 
 
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Libations
-
-        </Link>
-</li>
-
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-
-      Bourbon Society
-
-        </Link>
-</li>
 
 
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
+
+
+
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
               <Link className="navbar-item txtshadow" to="/about/">
 
               About Us
 
               </Link>
-      </li> 
+      </li>  */}
 
 
 
 <li className="carto" style={{textAlign:'', pointerEvents:''}}>
       <Link className="navbar-item txtshadow" to="/minutes/">
 
-      Our Locations
+      Latest Posts
 
         </Link>
 </li>
 
-      {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link className="navbar-item txtshadow" to="/minutes/">
+
+      Archived Posts
+
+        </Link>
+</li>
+
+
+
+{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
+      <Link state={{modal: true}} className="navbar-item txtshadow" to="/contact/">
+
+      Contact Us
+
+        </Link>
+</li> */}
+
+
+
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
   
       <Theme  style={{padding:'0'}} />
-   <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
    
-   <CartButton quantity={quantity} />
+   <CartButton quantity={quantity} /> */}
 
 
-        </li> */}
+        </li>
 
     </ul>
 
@@ -240,13 +237,8 @@ This is 2nd menu
      {/* <Install /> */}
       {/* <Footer /> */}
       
-
-      
-
       </>
     </div>
-
-
     
   )
 }

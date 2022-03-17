@@ -630,18 +630,33 @@ a [aria-current]:hover{
 
 
 
-body.blogpost .sidebarIconToggle{display: none;}
+// body.blogpost .sidebarIconToggle{display: none;}
 
+
+// #sidebarMenu {
+// 	position: fixed;
+// 	z-index:5;
+// 	right: 0;
+// 	padding:0 0 0 0;
+// 	transform: translateX(100vw);
+// 	transition: transform 250ms ease-in-out;
+//   background:transparent;
+// }
 
 #sidebarMenu {
+	height: 75vh;
 	position: fixed;
-	z-index:5;
+	z-index:3;
 	right: 0;
-	padding:0 0 0 0;
+	top:0;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding:75vh 0 0 0;
 	transform: translateX(100vw);
 	transition: transform 250ms ease-in-out;
-  background:transparent;
 }
+
 
 #secondMenu {
 	position: fixed;
@@ -942,7 +957,7 @@ footer{
   bottom:50px; right:30px;
   color:#fff;
   transform: rotate(90deg);
-  font-size:clamp(2rem, 3.5vw, 3.8rem);
+  font-size:clamp(1.3rem, 2.5vw, 2.8rem);
   text-shadow:2px 2px 2px #333;
 }
 
@@ -1561,7 +1576,6 @@ ul {
 }
 ul li {
   display: inline-block;
-  margin-left: 20px;
 }
 a {
   color: var(--primary-color) !important;

@@ -20,8 +20,8 @@ youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: "1"
-shareable: "1"
+comments: ""
+shareable: ""
 underlayImage: /assets/transparent.png
 featuredImage: /assets/generic.png
 svgImage: /assets/logo.svg

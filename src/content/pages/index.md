@@ -3,15 +3,15 @@ slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
 featuredImage: /assets/generic.png
-secondaryImage: /assets/generic.png
+secondaryImage: /assets/secondary.jpg
 underlayImage: /assets/transparent.png
 showInfo: true
 youtuber: ""
 youtubeautostart: "1"
 youtubeloop: ""
 title: Hytron Manufacturing
-svgImage: /assets/null.svg
-showPosts: "1"
+svgImage: /assets/hytron-grid.svg
+showPosts: ""
 cta:
   ctaText: Request Quote
   ctaLink: /contact/
