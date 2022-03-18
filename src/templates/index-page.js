@@ -475,7 +475,7 @@ function Iframer() {
             <div style={{position:'fixed', width:'100vw', height:'100vh', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
     {/* <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Hytron" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
 
-    <StaticImage placeholder="blurred" loading="eager" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Twilightscapes Default Image" style={{ width:'100%', height:'99vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+    <StaticImage placeholder="blurred" loading="eager" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Twilightscapes Default Image" style={{ width:'100%', height:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 
     {/* {Image ? (
   <GatsbyImage
@@ -676,7 +676,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1'}}>
 
 <div className="" style={{textAlign:'center'}}>
-      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
+      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2.5rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
  </div>
 
 {/* show feature */}
