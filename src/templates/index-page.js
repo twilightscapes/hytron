@@ -779,7 +779,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 
-<br /><br />
+
 
 {/* show Info */}
 {ShowInfo ? (
@@ -790,7 +790,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 <section style={{ display:'', height:'', overflow:''}}>
   <article>
 <div className="flexbutt" style={{display:'flex', gap:'30px'}}>
-      <div className="flexcheek " style={{padding:'1rem 2rem 0 2rem', maxHeight:'90vh',}}>
+      <div className="flexcheek " style={{padding:'0 2rem 0 2rem', maxHeight:'90vh',}}>
 
 
       <h1 className="title1" style={{textAlign:'left', marginLeft:'1rem'}}>
@@ -812,14 +812,14 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
           <div
-          style={{padding:'0 8% 0 4.5%', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}
+          style={{padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
           />
 
 
   
-<br />
+
           {/* <Link state={{modal: true}} 
             to={frontmatter.cta.ctaLink}
             className="button fire actionJackson specialfont"
@@ -872,7 +872,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
         
 
 
-      <div className="flexcheek" style={{position:'relative', maxHeight:'50vh', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
+      <div className="flexcheek" style={{position:'relative', maxHeight:'', overflow:'', marginBottom:'', borderRadius:'0 0 12px 12px'}}>
  
  
 
@@ -889,7 +889,7 @@ to="#experiences" title="See the new EXPERIENCES™" /> */}
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="post-card"
-              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'70vh',  borderRadius:'12px', position:'', backgroundSize:'', objectFit:'', top:'0', zIndex:'0'}}
+              style={{border:'0px solid red', width:'100%', height:'', maxHeight:'',  borderRadius:'12px', position:'', backgroundSize:'', objectFit:'', top:'0', zIndex:'0'}}
             />
           ) : (
             ""
@@ -1003,7 +1003,7 @@ Through NFT
 <div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'clamp(1rem, 8%, 15%)', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'20px auto 0 auto', maxWidth:'1600px'}}>
 
 
-<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}>Our Capabilities</h2>
+<h2 style={{fontSize:'clamp(2rem, 3vw, 3rem)', textAlign:'center', marginBottom:'1.5rem'}}>Our Capabilities</h2>
 
 
 <div className="flexbutt noexit print" style={{padding:'0',
@@ -1028,7 +1028,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>ISO 9001 Certified</div>
+          <div className="specialfont2" style={{fontSize:'clamp(1.6rem, 2vw, 2.8rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc', padding:'1rem 0'}}>ISO 9001 Certified</div>
     </AnchorLink>
     {/* <br />
     Our menu is steep in the traditions of the great steakhouses of America, however at virtually every step we have added our own "Rack House style" flair. We focus on providing a fantastic steak. */}
@@ -1048,7 +1048,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>
+          <div className="specialfont2" style={{fontSize:'clamp(1.6rem, 2vw, 2.8rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc', padding:'1rem 0'}}>
             Learn About Hytron</div>
     </AnchorLink>
     {/* <br />
@@ -1069,7 +1069,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
           ) : (
             ""
           )}
-          <div className="specialfont2" style={{fontSize:'clamp(2rem, 3vw, 3rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc'}}>
+          <div className="specialfont2" style={{fontSize:'clamp(1.6rem, 2vw, 2.8rem)', position:'absolute', top:'40%', width:'100%', textAlign:'center', textShadow:'2px 2px 1px #333', background:'rgba(0, 0, 0, .6)', color:'#ccc', padding:'1rem 0'}}>
             Our Equipment List</div>
     </AnchorLink>
     {/* <br />
@@ -1101,7 +1101,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<div id="equipmentlist" className="specialfont2" style={{textAlign:'',  margin:'10vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw',}}>
+<div id="equipmentlist" className="specialfont2" style={{textAlign:'',  margin:'0 auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw',}}>
 <Details />
 </div>
 
@@ -1111,7 +1111,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'10vh auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
+<div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'0 auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
   <a href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" target="_blank" className="" style={{margin:'', textDecoration:'none'}}>
   <StaticImage src="../../static/assets/iso-cert.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
@@ -1128,10 +1128,10 @@ ISO 9001:2015 and AS9100D certified
 
 
 
-<div id="about" className="" style={{textAlign:'',  margin:'10vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}>
+<div id="about" className="" style={{textAlign:'',  margin:'5vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}>
 
 
-<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}> About Hytron</h2>
+<h2 style={{fontSize:'6vw', textAlign:'center', marginBottom:''}}> About Hytron</h2>
 
 
 
@@ -1145,16 +1145,19 @@ ISO 9001:2015 and AS9100D certified
 
 
 
-<h3 style={{margin:'1rem 0'}}>Hytron Manufacturing Inc.</h3>
+<h3 style={{margin:'1rem 0', textAlign:'center'}}>Hytron Manufacturing Inc.</h3>
 
 
-
+<div style={{padding:'0 1rem'}}>
 <p>Founded in 1963, Hytron manufactures superior quality precision metal components to some of the most diverse industries in the global marketplace throughout the world. We utilize the latest in computer integrated manufacturing technology to ensure the highest level of precision, quality and efficiency in conformance with customer requirements.</p>
 
 
 <p>Hytron Manufacturing produces a wide variety of products ranging from complex machined components to multi-part, custom engineered fabrications and assemblies. We specialize in high precision mill and lathe work at our 13,000 square foot state-of-the-art manufacturing facility.</p>
 
 <p>For over 55 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
+</div>
+
+
 </div>
 
 
@@ -1167,7 +1170,7 @@ ISO 9001:2015 and AS9100D certified
 
 
 
-<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'10vh auto 0 auto', maxWidth:'80vw'}}>
+<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'0 auto 0 auto', maxWidth:'90vw', padding:'0 1rem'}}>
 <h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}>How can Hytron help your company?</h2>
 
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
@@ -1186,8 +1189,8 @@ electronics/telecom, military/government, and medical to mention a few. We have 
 
 
 
-<div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'20vh'}}>
-<h2 style={{fontSize:'3vw', textAlign:'center'}}>Contact Hytron</h2>
+<div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'5vh'}}>
+<h2 style={{fontSize:'6vw', textAlign:'center'}}>Contact Hytron</h2>
 <Contact />
 </div>
 
