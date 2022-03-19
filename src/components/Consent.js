@@ -15,7 +15,7 @@ const Consent = () => (
     id="sitepref"
 	debug={false}
 	location="none"
-	style={{ opacity:'.8', padding:'0 10px', margin:'0 20%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'2', display:'flex', alignItems:'center', alignContent:'center', width:'60%', justifyContent:'center', color:'#fff', background:'#111',
+	style={{ opacity:'.8', padding:'10px 30px', margin:'0 10%', border:'0px solid white', borderRadius:'12px', position:'fixed', bottom:'20vh', zIndex:'2', display:'flex', alignItems:'center', alignContent:'center', width:'80%', justifyContent:'center', color:'#fff', background:'#111',
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
@@ -36,7 +36,7 @@ const Consent = () => (
 >
 
 
-    <div style={{color:'inherit', padding:'1rem', fontSize:'100%', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center'}}>
+    <div style={{color:'inherit', padding:'1rem .2rem', fontSize:'clamp(.6rem, 1.8vw, 3rem)%', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center'}}>
      We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "65%", color:'inherit', textDecoration:'underline' }}>
    <AnchorLink state={{modal: true}} className="donotsell" to="/privacy#ccpa">Do Not Sell My Personal Information</AnchorLink> | <Link state={{modal: true}} to="/cookie-policy/" style={{color:'#fff',}}>Cookie Policy</Link>

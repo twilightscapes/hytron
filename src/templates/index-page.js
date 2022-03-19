@@ -410,7 +410,7 @@ function Iframer() {
 {ShowFeature ? (
 <>
 <div className="RArrow"><span></span></div>
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:'-25px'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', height:'85vh', overflow:'hidden', color:'#ccc', marginBottom:''}}>
 
 
 
@@ -673,9 +673,9 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 
 
-<div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'2', paddingTop:'0'}}>
+<div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0'}}>
 
-<div className="" style={{textAlign:'center', padding:'1rem'}}>
+<div className="" style={{textAlign:'center', padding:'1rem', marginTop:'-50px' }}>
       <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2.5rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw'}}>Request Quote</Link>
  </div>
 
