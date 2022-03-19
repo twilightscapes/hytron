@@ -992,13 +992,12 @@ footer{
 	padding: 12px 5px;
 	border: 0px solid #ccc;
 	color: #fff;
-	font-size: 12px; 
-	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	cursor: pointer;	
   transition: all 0.3s;
   border-radius:0;
+  text-decoration: underline;
 }
 .react-tabs__tab:hover {
 	/* color: #333; */
