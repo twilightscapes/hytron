@@ -513,7 +513,7 @@ function Iframer() {
           )} */}
 
         
-            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:'60%', height:'99vh', border:'0px solid blue'}}>Learn more about Hytron
+            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:'60%', height:'85vh', border:'0px solid blue'}}>Learn more about Hytron
 
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
             {/* </div> */}
