@@ -414,7 +414,7 @@ function Iframer() {
 {ShowFeature ? (
 <>
 <div className="RArrow"><span></span></div>
-<div className="horizontal-holder allin60panel" style={{position:'relative', height:'80vh', overflow:'hidden', color:'#ccc', marginBottom:'', border:'1px solid transparent'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative',  overflow:'', color:'#ccc', border:'1px solid transparent'}}>
 
 
 
@@ -425,7 +425,7 @@ function Iframer() {
 
 <div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
 
-<div id="" className="wrap-element " style={{overflow:'hidden', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}>
+<div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}>
 
 
 {/* <div style={{position:'absolute', objectFit:'', top:'0', zIndex:'-1', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
@@ -476,7 +476,7 @@ function Iframer() {
 
             
   
-            <div style={{position:'fixed', width:'100vw', height:'85vh', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+            <div style={{position:'fixed', width:'100vw', height:'', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
     {/* <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Hytron" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
 
     <StaticImage placeholder="blurred" loading="eager" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Twilightscapes Default Image" style={{ width:'100%', height:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
@@ -513,7 +513,7 @@ function Iframer() {
           )} */}
 
         
-            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem', width:'100%', position:'absolute', zIndex:'2', top:'60%', height:'80vh', border:'1px solid transparent'}}>Learn more about Hytron
+            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'50% 0 0 0', fontSize:'clamp(1.4rem, 3.5vw, 3.8rem)', width:'100%', position:'absolute', zIndex:'2', top:'', height:'100%', border:'1px solid transparent'}}>Learn more about Hytron
 
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
             {/* </div> */}

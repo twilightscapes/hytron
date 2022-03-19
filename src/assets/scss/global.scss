@@ -1237,6 +1237,7 @@ animation: fadeout .5s forwards;
 .horizontal-holder{
 	position:relative;
 	overflow:hidden;
+	height:80vh;
 }
 .horizontal-scroll{
 	position: relative;
@@ -1280,6 +1281,9 @@ animation: fadeout .5s forwards;
 	.horizontal-scroll{
 		width: calc(100% + 1px);
 		transform: rotate(-90deg) translateY(-100%);
+	}
+	.horizontal-holder{
+		height:auto !important;
 	}
 }
 
