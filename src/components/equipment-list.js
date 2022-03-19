@@ -45,7 +45,7 @@ const ProductDetails = () => (
    <div className="" style={{display:'flex', flexDirection:'column', gap:'2vh'}}>
 
  {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
- <ul className="splitRow" style={{background:'rgba(0, 0, 0, .4)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .1)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
 <li className="" style={{width:'50%', textAlign:''}}>(13) HAAS VF-2</li>
 <li className="" style={{width:'50%', textAlign:''}}>(1) HAAS VF-O</li>
 <li className="" style={{width:'50%', textAlign:''}}>(6) HAAS VF-OE</li>
@@ -63,7 +63,7 @@ const ProductDetails = () => (
     <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 2rem 0'}}>CNC Lathes – Total: 7</h2>
    <div className="" style={{display:'flex', flexDirection:'column', gap:'2vh'}}>
  {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability3.jpg" style={{borderColor:'transparent',}} /> */}
- <ul className="splitRow" style={{background:'rgba(0, 0, 0, .4)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .1)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
 <li className="" style={{width:'50%', textAlign:''}}>(1) HAAS SL-10 W/ Bar Feeder</li>
 <li className="" style={{width:'50%', textAlign:''}}>(1) HAAS SL-10</li>
 <li className="" style={{width:'50%', textAlign:''}}>(1) HAAS GT-10 W/ Bar Feeder</li>
@@ -84,7 +84,7 @@ const ProductDetails = () => (
    <div className="" style={{display:'flex', flexDirection:'column', gap:'20px', justifyContent:'flex-start', alignItems:'center'}}>
 
  {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
- <ul className="splitRow" style={{background:'rgba(0, 0, 0, .4)', margin:'0', padding:'5%', borderRadius:'12px',}}>
+ <ul className="splitRow" style={{background:'rgba(0, 0, 0, .1)', margin:'0', padding:'5%', borderRadius:'12px',}}>
 <li className="" style={{width:'50%', textAlign:''}}>Tesa Micro-Hite CMM</li>
 <li className="" style={{width:'50%', textAlign:''}}>Brown &amp; Sharpe Gage 2000 CMM</li>
 <li className="" style={{width:'50%', textAlign:''}}>Scherr-Tumico Quadra-Check 200 Comparator</li>
@@ -102,7 +102,7 @@ const ProductDetails = () => (
 
     <TabPanel style={{padding:'0 1.5rem', width:'100%'}}>
     <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 2rem 0'}}>Other Equipment</h2>
-    <ul className="splitRow" style={{background:'rgba(0, 0, 0, .4)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
+    <ul className="splitRow" style={{background:'rgba(0, 0, 0, .1)', clear:'', margin:'0', padding:'5%', borderRadius:'12px', gap:'20px'}}>
 <li className="" style={{width:'50%', textAlign:''}}>(2) Doall Bandsaw C-916A</li>
 <li className="" style={{width:'50%', textAlign:''}}>(1) Doall Vertical Band</li>
 <li className="" style={{width:'50%', textAlign:''}}>(2) Crest Ultrasonic Parts Cleaner</li>
