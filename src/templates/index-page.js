@@ -76,17 +76,17 @@ export const pageQuery = graphql`
         featuredImage {
           publicURL
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+            gatsbyImageData(placeholder: BLURRED, quality:40, layout: CONSTRAINED)
           }
         }
         secondaryImage {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 800)
+            gatsbyImageData(placeholder: BLURRED, quality:40, width: 800)
           }
         }
         underlayImage {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+            gatsbyImageData(placeholder: BLURRED, quality:40, layout: FULL_WIDTH)
           }
         }
         cta {
@@ -106,17 +106,17 @@ export const pageQuery = graphql`
   
     capability1: file(relativePath: { eq: "measurement.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED,)
+        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
       }
     }
     capability2: file(relativePath: { eq: "front-building.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
       }
     }
     capability3: file(relativePath: { eq: "facilities.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
       }
     }
 
@@ -145,7 +145,7 @@ export const pageQuery = graphql`
             featuredImage {
               publicURL
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                gatsbyImageData(placeholder: BLURRED, quality:40, layout: CONSTRAINED)
               }
             }
           }

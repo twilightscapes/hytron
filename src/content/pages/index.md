@@ -2,9 +2,9 @@
 slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
-featuredImage: /assets/transparent.png
+featuredImage: /assets/default-og-image.jpg
 secondaryImage: /assets/secondary.jpg
-underlayImage: /assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg
+underlayImage: /assets/front-page.jpg
 showInfo: true
 youtuber: "https://youtu.be/JOMipAq7ZSk"
 youtubeautostart: "1"
