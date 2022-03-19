@@ -72,7 +72,7 @@ export default class Contact extends React.Component {
               className="form "
                 name="ccpa"
                 method="post"
-                action="/contact/thanks/"
+                action="/thanks/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
@@ -403,13 +403,13 @@ export default class Contact extends React.Component {
 
       
       <label className="label postField" id="tfa_2206-L" htmlFor="tfa_2206" style={{width:'50%', border:'1px solid', borderRadius:'6px', padding:'4%', margin:'3px', textAlign:'center', display:'flex', justifyContent:'center', alignContent:'center'}}>
-      <input type="radio" value="tfa_2206" className="" id="tfa_2206" name="tfa_2202" aria-required="true" aria-labelledby="tfa_2206-L" data-tfa-labelledby="tfa_2202-L tfa_2206-L" /><span class="checkmark"></span>
+      <input type="radio" value="tfa_2206" className="" id="tfa_2206" name="tfa_2202" aria-labelledby="tfa_2206-L" data-tfa-labelledby="tfa_2202-L tfa_2206-L" required /><span class="checkmark"></span>
       <span style={{textAlign:'left'}}>I declare under penalty of perjury that I am the individual consumer whose personal information is the subject of the request.</span></label>
       
       
       
       <label className="label postField" id="tfa_2207-L" htmlFor="tfa_2207" style={{width:'50%', border:'1px solid', borderRadius:'6px', padding:'4%', margin:'3px', textAlign:'center', display:'flex', justifyContent:'center', alignContent:'center'}}>
-      <input type="radio" value="tfa_2207" className="" id="tfa_2207" name="tfa_2202" aria-required="true" aria-labelledby="tfa_2207-L" data-tfa-labelledby="tfa_2202-L tfa_2207-L" /><span class="checkmark"></span>
+      <input type="radio" value="tfa_2207" className="" id="tfa_2207" name="tfa_2202" aria-labelledby="tfa_2207-L" data-tfa-labelledby="tfa_2202-L tfa_2207-L" required /><span class="checkmark"></span>
         <span style={{textAlign:'left'}}>I declare under penalty of perjury that I am the Authorized Agent of the individual whose personal information is the subject of the request. I understand I will be required to provide proof in writing of my status as the individuals Authorized Agent and additional information to confirm my identity.</span></label>
 </div>
 

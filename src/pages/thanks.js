@@ -25,12 +25,12 @@ const Thanks = () => (
           textAlign:'center'
         }}
       />
-      <h1 className="neonText" style={{fontSize:'200%'}}>Got your message</h1>
-      <p>I should respond shortly, depending on where I am at.</p>
+      <h1 className="neonText" style={{fontSize:'200%'}}>Success!</h1>
+      <p>We will respond to your inquire as soon as possible.</p>
       <div className="spacer33"></div> 
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
-        Lets go back to Homepage
+        Back to Homepage
       </Link>
     </div>
     <div className="spacer33"></div> 

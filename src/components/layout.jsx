@@ -16,7 +16,7 @@ import Theme from "../components/theme"
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
 
-import Install from './install-discount'
+// import Install from './install-discount'
 // import { navigate } from "gatsby";
 
 export function Layout({ children }) {

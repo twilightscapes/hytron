@@ -200,7 +200,7 @@ export function Footer() {
 
 
       <footer className="" style={{display:'flex', flexDirection:'column', padding:'1rem 0', marginTop:'0', position:'relative'}}>
-      <LegacyBG style={{position:'absolute', bottom:'', left:'', right:'', top:'0', overflow:'hidden', display:'block', border:'0px solid red', zIndex:'-1', width:'100vw', height:'100vh',  }} />
+      <LegacyBG style={{position:'absolute', bottom:'', left:'', right:'', top:'0', overflow:'hidden', display:'block', border:'0px solid red', zIndex:'-1', width:'100vw', height:'',  }} />
    
 <br />
 

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Layout } from "../components/layout"
-import CCPA from '../components/privacy-form-inc'
+import Ccpa from '../components/privacy-form-inc'
 
 import GoBack from "../components/goBack"
 
@@ -77,10 +77,10 @@ Huntington Beach, CA 92649</p>
 <br />
 <hr />
 <br />
-<a id="ccpa"></a>
-<h2>CCPA Request</h2>
 
-<CCPA />
+<h2 id="ccpa">CCPA Request</h2>
+
+<Ccpa />
 			
 	</div>
       
