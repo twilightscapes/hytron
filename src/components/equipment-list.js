@@ -29,7 +29,7 @@ const ProductDetails = () => (
 
 
 <Tabs className="infomenu" style={{minHeight:'20vh', width:'100%', maxWidth:'1000px', margin:'0 auto', overflow:'hidden', marginTop:'40px', fontSize:'clamp(1rem, 2vw, 2.5rem)', lineHeight:'120%'}}>
-        <h2 className="specialfont" style={{fontSize:'5vw', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
+        <h2 className="specialfont" style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'center', margin:'1rem 0'}}>Our Equipment</h2>
     <TabList style={{width:'100%', border:'0px solid yellow', padding:'0 1rem'}}>
     <Tab><div className="iconmenu"><span>Mills</span></div></Tab>
     <Tab><div className="iconmenu"><span>Lathes</span></div></Tab>

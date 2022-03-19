@@ -793,7 +793,7 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
       <div className="flexcheek " style={{padding:'0 2rem 0 2rem', maxHeight:'90vh',}}>
 
 
-      <h1 className="title1" style={{textAlign:'left', marginLeft:'1rem'}}>
+      <h1 className="title1" style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'left', marginLeft:''}}>
             {frontmatter.title}
             {/* Today's Popular Subjects <br /> */}
             {/* The Rack House */}
@@ -1003,7 +1003,7 @@ Through NFT
 <div id="capabilities" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'clamp(1rem, 8%, 15%)', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'20px auto 0 auto', maxWidth:'1600px'}}>
 
 
-<h2 style={{fontSize:'clamp(2rem, 3vw, 3rem)', textAlign:'center', marginBottom:'1.5rem'}}>Our Capabilities</h2>
+<h2 style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'center', marginBottom:'1.5rem'}}>Our Capabilities</h2>
 
 
 <div className="flexbutt noexit print" style={{padding:'0',
@@ -1085,7 +1085,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<h2 style={{fontSize:'3vw'}}>Quality Management System</h2>
+<h2 style={{fontSize:'clamp(1.5rem, 3vw, 2rem)', textAlign:'center'}}>Quality Management System</h2>
 
 <p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
 
@@ -1131,7 +1131,7 @@ ISO 9001:2015 and AS9100D certified
 <div id="about" className="" style={{textAlign:'',  margin:'5vh auto 0 auto', position:'relative', zIndex:'1', maxWidth:'90vw', fontSize:'clamp(1rem, 2vw, 2.8rem)',}}>
 
 
-<h2 style={{fontSize:'6vw', textAlign:'center', marginBottom:''}}> About Hytron</h2>
+<h2 style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'center', marginBottom:''}}> About Hytron</h2>
 
 
 
@@ -1171,7 +1171,7 @@ ISO 9001:2015 and AS9100D certified
 
 
 <div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'0 auto 0 auto', maxWidth:'90vw', padding:'0 1rem'}}>
-<h2 style={{fontSize:'4vw', textAlign:'center', marginBottom:'1.5rem'}}>How can Hytron help your company?</h2>
+<h2 style={{fontSize:'clamp(1.5rem, 5vw, 3rem)', textAlign:'center', marginBottom:'1.5rem'}}>How can Hytron help your company?</h2>
 
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
 
@@ -1190,7 +1190,7 @@ electronics/telecom, military/government, and medical to mention a few. We have 
 
 
 <div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'5vh'}}>
-<h2 style={{fontSize:'6vw', textAlign:'center'}}>Contact Hytron</h2>
+<h2 style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'center'}}>Contact Hytron</h2>
 <Contact />
 </div>
 
