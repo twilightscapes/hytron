@@ -106,17 +106,17 @@ export const pageQuery = graphql`
   
     capability1: file(relativePath: { eq: "measurement.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED, quality:40, layout: CONSTRAINED,)
       }
     }
     capability2: file(relativePath: { eq: "front-building.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED, quality:40, layout: CONSTRAINED)
       }
     }
     capability3: file(relativePath: { eq: "facilities.jpg" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: BLURRED, quality:40, width:800, layout: CONSTRAINED)
+        gatsbyImageData(placeholder: BLURRED, quality:40, layout: CONSTRAINED)
       }
     }
 
