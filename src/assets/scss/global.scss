@@ -1281,10 +1281,13 @@ animation: fadeout .5s forwards;
 	.horizontal-scroll{
 		width: calc(100% + 1px);
 		transform: rotate(-90deg) translateY(-100%);
+		// max-height:300px;
 	}
 	.horizontal-holder{
-		height:auto !important;
+		height:280px !important;
 	}
+	.wrap-element{height:280px !important;}
+
 }
 
 

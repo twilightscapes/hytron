@@ -679,8 +679,8 @@ alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
 
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0'}}>
 
-<div className="" style={{textAlign:'center', padding:'1rem', marginTop:'-30px' }}>
-      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'2.5rem auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw',}}>Request Quote</Link>
+<div className="" style={{textAlign:'center', padding:'1rem', marginTop:'0' }}>
+      <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'0 auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw',}}>Request Quote</Link>
  </div>
 
 {/* show feature */}
