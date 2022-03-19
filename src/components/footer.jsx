@@ -5,6 +5,9 @@ import Theme from "../components/theme"
 import Consent from "../components/Consent"
 // import Install from "../components/Install-footer"
 import Icons from "../util/socialmedia.json"
+import LegacyBG from "../../static/assets/hytron-bg.svg"
+
+
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -197,7 +200,7 @@ export function Footer() {
 
 
       <footer className="" style={{display:'flex', flexDirection:'column', padding:'1rem 0', marginTop:'0', position:'relative'}}>
-
+      <LegacyBG style={{position:'absolute', bottom:'', left:'', right:'', top:'0', overflow:'hidden', display:'block', border:'0px solid red', zIndex:'-1', width:'100vw', height:'100vh',  }} />
    
 <br />
 

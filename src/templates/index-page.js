@@ -15,6 +15,7 @@ import BlogListHome from "../components/blog-list-home"
 // import Newsignup from "../components/newssign"
 import Details from "../components/equipment-list"
 import Contact from "../components/Contact-inc"
+
 // import FrontLoader from "../../static/assets/grid-loader.svg"
 // import { RiArrowRightSLine } from "react-icons/ri"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -403,6 +404,9 @@ function Iframer() {
 
 {/* VIDEO URLS */}
 {/* uCf3Q43fC_4 cool train */}
+
+
+
 
 
 

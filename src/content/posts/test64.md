@@ -24,7 +24,7 @@ comments: "1"
 shareable: "1"
 underlayImage: /assets/transparent.png
 featuredImage: /assets/micro-seals.jpg
-svgImage: /assets/Hytron.svg
+svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
