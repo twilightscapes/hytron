@@ -1114,7 +1114,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 <div id="iso" className="specialfont" style={{textAlign:'center', fontSize:'3vw', margin:'0 auto 0 auto', maxWidth:'80vw', position:'relative', zIndex:'1'}}>
 ISO 9001:2015 and AS9100D certified
   <a href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" target="_blank" className="" style={{margin:'', textDecoration:'none'}}>
-  <StaticImage src="../../static/assets/iso-cert.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
+  <StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/iso-cert.jpg" alt="Hytron ISO Certification" style={{height:'auto', position:'', zIndex:'', top:'',border:'6px solid !important', borderRadius:'12px', objectFit:'contain',}} />
 </a>
 </div>
 <br /><br />
@@ -1136,8 +1136,8 @@ ISO 9001:2015 and AS9100D certified
 
 
 <div style={{display:'flex', justifyContent:'flex-start', alignItems:'', position:'relative', width:'100%', height:'100%'}}>
-<StaticImage src="../../static/assets/hytron-facility.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'relative', zIndex:'0', top:'', borderRadius:'12px', objectFit:'cover', margin:'1rem 0'}} />
-<Link state={{modal: true}} to="/location/"><StaticImage src="../../static/assets/map.png" alt="Twilightscapes Default Image" style={{height:'100%', position:'absolute', zIndex:'1', top:'5px', left:'20px', borderRadius:'12px', maxHeight:'15vh', maxWidth:'20vw', margin:'1rem 0', border:'2px solid #ff0000'}} /></Link>
+<StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/hytron-facility.jpg" alt="Twilightscapes Default Image" style={{height:'auto', position:'relative', zIndex:'0', top:'', borderRadius:'12px', objectFit:'cover', margin:'1rem 0'}} />
+<Link state={{modal: true}} to="/location/"><StaticImage placeholder="blurred" layout="constrained" src="../../static/assets/map.png" alt="Twilightscapes Default Image" style={{height:'100%', position:'absolute', zIndex:'1', top:'5px', left:'20px', borderRadius:'12px', maxHeight:'15vh', maxWidth:'20vw', margin:'1rem 0', border:'2px solid #ff0000'}} /></Link>
 
 
 <Link className="button specialfont2" state={{modal: true}} to="/careers/" style={{position:'absolute', zIndex:'1', bottom:'5px', right:'20px',}}>CAREERS @ Hytron</Link>
