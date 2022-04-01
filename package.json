@@ -1,7 +1,7 @@
 {
   "name": "@vidsock/gatsby-vidsock",
   "description": "Next Gen NFT Marketing Platform",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Todd Lambert <toddlambert@gmail.com>",
   "license": "MIT",
   "scripts": {

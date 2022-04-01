@@ -1117,6 +1117,10 @@ animation: fadeout .5s forwards;
   }
 }
 
+iframe.virtualtour{
+	filter: invert(90%) grayscale(1);
+
+}
 
 @media (hover: hover) {
 	.virtualtour{
@@ -1297,9 +1301,12 @@ animation: fadeout .5s forwards;
 	position:relative !important;
 }
 .frontbg iframe{
-	filter:brightness(1.2)contrast(2.4)hue-rotate(0deg)saturate(1.6);
+	filter:brightness(1.2) contrast(2.4) hue-rotate(0deg) saturate(1.6);
 	opacity: .4 ;
 }
+
+
+
 
 .masonry {
 	margin: 0 auto;

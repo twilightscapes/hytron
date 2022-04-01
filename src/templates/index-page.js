@@ -176,9 +176,9 @@ const HomePage = ({ data }) => {
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data 
   const { frontmatter, html, excerpt } = markdownRemark
-  const Image = frontmatter.featuredImage
-    ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
-    : ""
+  // const Image = frontmatter.featuredImage
+  //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
+  //   : ""
 
     const SecondaryImage = frontmatter.secondaryImage
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
@@ -222,7 +222,7 @@ const HomePage = ({ data }) => {
 
 
 
-    const [state, setState] = useState({
+    const [state] = useState({
       playing: true,
       controls: false,
       light: true,
@@ -1170,7 +1170,7 @@ ISO 9001:2015 and AS9100D certified
 
 
 
-<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', padding:'0', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'0 auto 0 auto', maxWidth:'90vw', padding:'0 1rem'}}>
+<div id="industries" className="" style={{position:'relative', zIndex:'2', textAlign:'', fontSize:'clamp(1rem, 2vw, 2.8rem)', margin:'0 auto 0 auto', maxWidth:'90vw', padding:'0 1rem'}}>
 <h2 style={{fontSize:'clamp(1.5rem, 5vw, 3rem)', textAlign:'center', marginBottom:'1.5rem'}}>How can Hytron help your company?</h2>
 
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
