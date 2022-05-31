@@ -5,3 +5,14 @@
 [build.environment]
   NODE_VERSION = "14"
   NODE_OPTIONS = "--max_old_space_size=4096"
+
+  [[redirects]]
+  from = "/aboutus"
+  to = "/#about"
+  status = 301
+  from = "/capabilities"
+  to = "/#capabilities"
+  status = 301
+  from = "/industry"
+  to = "/#industries"
+  status = 301
