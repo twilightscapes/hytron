@@ -56,6 +56,7 @@ export function Seo({
     >
       <html lang="en" />
       <meta name="description" content={seo.description} />
+      <meta name="google-site-verification" content="lzC9XHCg9WK3RCbJW6TAiI9yuNjdLCdOIwkupZMNYtw" />
       <meta name="image" content={seo.image} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:url" content={seo.url} />
