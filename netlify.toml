@@ -10,9 +10,11 @@
   from = "/aboutus"
   to = "/#about"
   status = 301
+  [[redirects]]
   from = "/capabilities"
   to = "/#capabilities"
   status = 301
+  [[redirects]]
   from = "/industry"
   to = "/#industries"
   status = 301
