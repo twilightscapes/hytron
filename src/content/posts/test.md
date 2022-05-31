@@ -1,29 +1,29 @@
 ---
 template: blog-post
-title: Test Post 2
-slug: /testpost2
-date: 2022-03-11 01:43
-description: Test Description
-youtuber: "iHxmNzMfDj4"
+title: Test Post 1
+slug: /testpost1
+date: 2022-02-12 01:43
+description: Hytron Manufacturing
+youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: ""
 youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/3lyudrx1pJo"
-youtubersuggestion3: "https://youtu.be/l_XqDxL6xJM"
-youtubestart: ""
-youtubeend: ""
-youtubemute: "1"
-youtubeloop: "1"
+youtubersuggestion2: ""
+youtubersuggestion3: ""
+youtubestart: "20"
+youtubeend: "68"
+youtubemute: "0"
+youtubeloop: ""
 audiostart: "0"
 audioend: ""
 youtubecontrols: "0"
 youtubeautostart: "1"
 isnftforsale: ""
 svgzindex: "0"
-comments: ""
-shareable: ""
+comments: "1"
+shareable: "1"
 underlayImage: /assets/transparent.png
-featuredImage: /assets/prosthetics.jpg
+featuredImage: /assets/medical-partners.jpg
 svgImage: /assets/null.svg
 nftlink: ""
 nftdrop: ""
@@ -48,6 +48,11 @@ nftredeem: ""
  
 
  
+<!-- 6hB3S9bIaco -->
 
-<!-- lYGald0tFro SOUNDTRACK 45> -->
-<!-- qzuM2XTnpSA OPERA 32-45 -->
+<!-- 
+/assets/swd-foreground.png
+
+/assets/transparent.png
+
+ -->

@@ -177,7 +177,7 @@ module.exports = {
         publicPath: `admin`,
         htmlTitle: `All in 60 CMS`,
         htmlFavicon: `static/icons/manifest-icon-192.png`,
-        includeRobots: false,
+        includeRobots: true,
         logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
       },
     },
@@ -192,14 +192,14 @@ module.exports = {
 
 
  
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
-    //     trackingIds: [
-    //       settings.ga,
-    //     ],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          settings.ga,
+        ],
+      },
+    },
 
     
     // {
@@ -214,8 +214,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://rackhouse.netlify.app',
-        sitemap: 'https://rackhouse.netlify.app/sitemap.xml',
+        host: 'https://hytronmanufacturing.com',
+        sitemap: 'https://hytronmanufacturing.com/sitemap.xml',
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
@@ -230,10 +230,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `The Rack House Steaks & Spirits`,
-        short_name: `RackHouse`,
+        name: `Hytron Manufacturing`,
+        short_name: `Hytron`,
         start_url: `/?user_mode=app`,
-        description: `The Rack House`,
+        description: `Hytron Manufacturing`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,

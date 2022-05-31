@@ -11,7 +11,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import Controls from "../components/Controls";
 import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
-import BlogListHome from "../components/blog-list-home"
+// import BlogListHome from "../components/blog-list-home"
 // import Newsignup from "../components/newssign"
 import Details from "../components/equipment-list"
 import Contact from "../components/Contact-inc"
@@ -174,7 +174,7 @@ const HomePage = ({ data }) => {
 //  const imageData = data.desktop.childImageSharp.fluid
 
   // const { postcount } = useSiteMetadata()
-  const { markdownRemark, posts } = data 
+  const { markdownRemark } = data 
   const { frontmatter, html, excerpt } = markdownRemark
   // const Image = frontmatter.featuredImage
   //   ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -201,7 +201,7 @@ const HomePage = ({ data }) => {
 
     const ShowFeature = frontmatter.showFeature
     const ShowInfo = frontmatter.showInfo
-    const ShowPosts = frontmatter.showPosts
+    // const ShowPosts = frontmatter.showPosts
 
     const Svg = frontmatter.svgImage
     const svgZindex = frontmatter.svgzindex
@@ -625,33 +625,33 @@ function Iframer() {
 </div> */}
 
 
-{/* <div>
+<div>
 <StaticImage className=""
-alt="Delicious!" src="../../static/assets/FAROE-ISLAND-SALMON-scaled.jpg" />
-</div> */}
+alt="Semi-Conductor Industry" src="../../static/assets/micro-seals.jpg" />
+</div>
 
 
 
-{/* <div>
+<div>
 <StaticImage className=""
-alt="Get Racked at the Rack House" src="../../static/assets/NEW-ZEALAND-RACK.jpg" />
-</div> */}
+alt="Robotics Industry" src="../../static/assets/prosthetics.jpg" />
+</div>
 
 
 
-{/* <div>
+<div>
 <StaticImage className=""
-alt="" src="../../static/assets/HICKORY-SMOKED-OF-WS.jpg" />
-</div> */}
+alt="Medical Industry" src="../../static/assets/medical-partners.jpg" />
+</div>
 
 
 
 
-{ShowPosts ? (
+{/* {ShowPosts ? (
         <BlogListHome data={posts} style={{}} />
    ) : (
     ""
-  )}
+  )} */}
 
 <div>
 </div>
