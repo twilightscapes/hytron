@@ -25,8 +25,8 @@ svgzindex: ""
 youtubestart: ""
 ---
 
-<p>With our best-in-class capabilities, high quality standards and with our supply chain tracking system we can deliver your products in the most cost effective timely way. Today more than ever, we are looking for ways to deliver more value to our customers and our continued focus on manufacturing innovation allows us to do so.</p>
+<p>Hytron is a U. S. owned and operated contract manufacturing service provider. Since 1963, we have partnered with Fortune 500 companies for their component part manufacturing by providing solutions that yield unique competitive advantages. This has resulted in a reduced time-to-market and cost savings for our Customers.</p>
 
-<p>Let Hytron assist you with bringing your product to market.</p>
+<p>Our manufacturing capabilities range from prototype fabrication to close tolerance machining at the sub-assembly level through complete end-to-end manufacturing in production volumes to support your requirements.</p>
 
 <!-- https://youtu.be/JOMipAq7ZSk -->

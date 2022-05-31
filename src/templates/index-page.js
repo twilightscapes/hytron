@@ -1087,11 +1087,11 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <h2 style={{fontSize:'clamp(1.5rem, 3vw, 2rem)', textAlign:'center'}}>Quality Management System</h2>
 
-<p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for the aerospace, aviation, space and defense industries. As a certified contract manufacturer, this certification underscores out commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
+<p>Hytron’s Quality Management System (QMS) is <a style={{textDecoration:'underline'}} href="../Hytron-Cert-AS9100D-with-ISO-9001-exp2024-AS6.pdf" title="View Certification" target="_blank">ISO 9001:2015 and AS9100D certified</a> which is the standard for various high demand industries. As a certified contract manufacturer, this certification underscores our commitment to quality and on-time delivery of the products and services we provide to our customers.</p>
 
 <p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
 
-<p>We specialize in small to medium sized parts in many different quantities. From one-piece short run prototypes to very large volume production. Whether your part contains one component or many, needs special processing or assembly capabilities, our production team can take your project from conception to production. We are the trusted go-to source for the aerospace, medical, commercial, military, and computer industries for over 55 years in business.  Let our dedicated team take your vision/concept and make it a reality.</p>
+<p>We specialize in small to medium sized parts in many different quantities. From one-piece short run prototypes to very large volume production. Whether your part contains one component or many, needs special processing or assembly capabilities, our production team can take your project from conception to production. We are the trusted go-to source for a variety of industries for over 55 years in business. Let our dedicated team take your vision/concept and make it a reality.</p>
 
 <p>We have built a long standing reputation as a manufacturer of precision products that are field proven and time tested.  Contact one of our professionals for information on your specific manufacturing requirements.</p>
 </div>
@@ -1175,8 +1175,10 @@ ISO 9001:2015 and AS9100D certified
 
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
 
-<p>We are proud to support some of the largest industries in the world who are globally recognized market leaders including aerospace/defense, semiconductor,
-electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p>
+
+<p>We are proud to support some of the largest industries in the world who are globally recognized market leaders. We have been privileged to have long-term relationships with many of our partners across industries.</p>
+{/* <p>We are proud to support some of the largest industries in the world who are globally recognized market leaders including aerospace/defense, semiconductor,
+electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p> */}
 
 
 <h3>Learn More</h3>
