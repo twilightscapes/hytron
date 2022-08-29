@@ -425,7 +425,7 @@ function Iframer() {
 
 <div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
 
-<div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}>
+{/* <div id="" className="wrap-element" style={{overflow:'', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}> */}
 
 
 {/* <div style={{position:'absolute', objectFit:'', top:'0', zIndex:'-1', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
@@ -447,13 +447,12 @@ function Iframer() {
 </div> */}
 
 
-<ReactPlayer
+{/* <ReactPlayer
             ref={playerRef}
             width="100%"
             height="100%"
             style={{position:'absolute', zIndex:'-1'}}
             url={YouTube}
-            // url="https://www.youtube.com/embed/videoseries?list=PLSld2C-SHcw6iI-8VdTwswUmghftk2chW"
             playing={playing}
             controls={controls}
             light={light}
@@ -477,110 +476,40 @@ function Iframer() {
             
   
             <div style={{position:'fixed', width:'100vw', height:'', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    {/* <img className="homepage-bg" src="../../assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Hytron" style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
+
 
     <StaticImage placeholder="blurred" loading="eager" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" alt="Twilightscapes Default Image" style={{ width:'100%', height:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
 
-    {/* {Image ? (
-  <GatsbyImage
-              image={Image}
-              loading="eager"
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{ width:'100%', height:'100vh', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}}
-            />
 
-          ) : (
-          ""
-          )} */}
 
 
   </div> 
 
 
 
-  {/* {Image ? (
-  <GatsbyImage
-              image={Image}
-              loading="eager"
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'100vh', width:'100vw', maxHeight:'', position:'absolute', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
-            />
 
-          ) : (
-          ""
-          )} */}
 
         
             <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'50% 0 0 0', fontSize:'clamp(2rem, 3.5vw, 3.8rem)', textShadow:'2px 2px 0 #111', width:'100%', position:'absolute', zIndex:'2', top:'', height:'100%', border:'1px solid transparent'}}>Learn more about Hytron
 
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} /></div>
-            {/* </div> */}
+
 
 
             </button>}
-        //  light="../assets/transparent.png"
+
           />
           
 
 
 
-          {/* <div style={{position:'absolute', width:'100vw', height:'100vh', top:'5px', margin:'0', zIndex:'-1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-  {Svg ? (
-            <AddSvg />
-       
-          ) : (
-            ""
-          )}
-  </div> */}
 
 
 
 
 
-          {/* <div style={{position:'relative', padding:'10% 0', width:'', height:'', zIndex:'3'}}>
-<h1
-    className="lineOne"
-    style={{
-     color: 'white',
-      textAlign: 'center', 
-      letterSpacing: '.0rem',
-      fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
-      filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
-      textShadow:'2px 2px 0 #333'
-    }}
-  >
-    Quality Manufacturing
-  </h1>
 
-<h2
-          className="boom3 normal txtshadow-header lineTwo"
-          style={{
-            color: '#fff',
-            textAlign: 'center', 
-            fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
-            filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
-            textShadow:'2px 2px 0 #333'
-          }}
-        >
-         Precision Parts
-        </h2>
-
-<h3
-          className="boom4 txtshadow-header mobile-txt lineThree"
-          style={{
-           color: 'white',
-            textAlign: 'center',
-            textTransform: 'normal', 
-            fontSize:'clamp(1rem, 3.5vw, 3.8rem)',
-            filter:'dropShadow(1px 2px 4px rgba(0,0,0,.9))',
-            textShadow:'2px 2px 0 #333'
-          }}
-        >
-         Done right AND on time
-        </h3>
-</div> */}
+         
 
 
 
@@ -591,7 +520,7 @@ function Iframer() {
 
 
           
-          </div>
+          </div> */}
 
 
 
@@ -623,6 +552,15 @@ function Iframer() {
   <Panel1 />
 
 </div> */}
+
+
+<div>
+<StaticImage placeholder="blurred" loading="eager"
+alt="Semi-Conductor Industry" src="../../static/assets/daniel-smyth-PcvlAQKAPXk-unsplash.jpg" />
+</div>
+
+
+
 
 
 <div>

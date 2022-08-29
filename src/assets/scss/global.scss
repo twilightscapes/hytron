@@ -1427,10 +1427,12 @@ iframe.virtualtour{
 }
 /* HUD CONTROLS */
 .wrap-element {
-	position: relative;
-	display:block;
-	top:0;
-	color:#fff !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:100%;
+	border: 0;
+	aspect-ratio: 16 / 9;
 }
 .wrap-element iframe {
 	position: absolute;
