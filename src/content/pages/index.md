@@ -2,7 +2,7 @@
 slug: /
 tagline: "Quality Manufacturing - Precision Parts - done right AND on time"
 description: "Quality Manufacturing - Precision Parts - done right AND on time"
-featuredImage: /assets/default-og-image.jpg
+featuredImage: /assets/hytron-default-promo.jpg
 secondaryImage: /assets/secondary.jpg
 underlayImage: /assets/front-page.jpg
 showInfo: true
