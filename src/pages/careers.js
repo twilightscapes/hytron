@@ -53,9 +53,11 @@ export default function Careers() {
  <br />
  <h3><strong>CNC Operator</strong></h3>
  <p>Hytron is currently looking for CNC operators. Preference will be given to candidates that have experience in CNC laser cutting and have a minimum of two years experience. Successful candidates must have Vertical or Horizontal Machine experience and a commitment to quality, safety, and customer satisfaction.</p>
+ <p style={{fontSize:'80%', fontStyle:'italic'}}>Pay Scale: 17.00 - 45.00</p>
  
  <h3><strong>CNC Setup Technician</strong></h3>
  <p>Hytron is currently looking for an experienced CNC setup technician for our HAAS vertical mills. Minimum of 5 years experience and must be familiar with our Mastercam Software. Successful candidates must have Vertical or Horizontal Machine experience and a commitment to quality, safety, and customer satisfaction.</p>
+ <p style={{fontSize:'80%', fontStyle:'italic'}}>Pay Scale: 17.00 - 45.00</p>
  <br />
  </div>
 
