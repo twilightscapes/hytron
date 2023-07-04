@@ -556,7 +556,7 @@ function Iframer() {
 
 <div>
 <StaticImage placeholder="blurred" loading="eager"
-alt="Semi-Conductor Industry" src="../../static/assets/daniel-smyth-njf81CyLZEQ-unsplash.jpg" />
+alt="Semi-Conductor Industry" src="../../static/assets/hytron-worker2.webp" />
 </div>
 
 
