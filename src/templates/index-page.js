@@ -1029,7 +1029,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 <p>With our Haas CNC machining centers, Hytron provides precision CNC machining of numerous materials, including stainless steel and aluminum machining. We specialize in precision milling and turning while also providing other machining services, which cover the entire production process such as  conventional milling, drilling, turning, and sawing, as well as grinding and honing, deburring, and part marking. With our approved, certified suppliers, we can also provide heat treating, welding, plating, and painting.</p>
 
-<p>We specialize in small to medium sized parts in many different quantities. From one-piece short run prototypes to very large volume production. Whether your part contains one component or many, needs special processing or assembly capabilities, our production team can take your project from conception to production. We are the trusted go-to source for a variety of industries for over 65 years in business. Let our dedicated team take your vision/concept and make it a reality.</p>
+<p>We specialize in small to medium sized parts in many different quantities. From one-piece short run prototypes to very large volume production. Whether your part contains one component or many, needs special processing or assembly capabilities, our production team can take your project from conception to production. We are the trusted go-to source for a variety of industries for over 60 years in business. Let our dedicated team take your vision/concept and make it a reality.</p>
 
 <p>We have built a long standing reputation as a manufacturer of precision products that are field proven and time tested.  Contact one of our professionals for information on your specific manufacturing requirements.</p>
 </div>
@@ -1092,7 +1092,7 @@ ISO 9001:2015 and AS9100D certified
 
 <p>Hytron Manufacturing produces a wide variety of products ranging from complex machined components to multi-part, custom engineered fabrications and assemblies. We specialize in high precision mill and lathe work at our 13,000 square foot state-of-the-art manufacturing facility.</p>
 
-<p>For over 65 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
+<p>For over 60 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
 </div>
 
 
