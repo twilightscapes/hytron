@@ -1092,7 +1092,7 @@ ISO 9001:2015 and AS9100D certified
 
 <p>Hytron Manufacturing produces a wide variety of products ranging from complex machined components to multi-part, custom engineered fabrications and assemblies. We specialize in high precision mill and lathe work at our 13,000 square foot state-of-the-art manufacturing facility.</p>
 
-<p>For over 55 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
+<p>For over 65 years we have serviced the diverse needs of major industries. Hytron understands how to produce quality products in less time and for less money.</p>
 </div>
 
 
