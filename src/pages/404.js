@@ -25,7 +25,7 @@ const NotFound = () => (
         textAlign:'center'
           }}
         />
-        <h1 className="neonText" style={{fontSize:'200%'}}>Well, Shit.</h1>
+        <h1 className="neonText" style={{fontSize:'200%'}}>Darn it!</h1>
         <p className="neonText" style={{fontSize:'150%', margin:'2rem'}}>
           That wasn't supposed to happen.
         </p>
