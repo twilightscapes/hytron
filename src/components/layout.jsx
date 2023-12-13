@@ -1,8 +1,8 @@
 import React, { } from "react"
 import { Seo } from "./seo"
-import { Link } from 'gatsby-plugin-modal-routing-3'
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
-import { AiOutlineClose } from "react-icons/ai"
+import { Link } from 'gatsby-plugin-modal-routing-4'
+// import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
+// import { AiOutlineClose } from "react-icons/ai"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
@@ -35,7 +35,7 @@ export function Layout({ children }) {
 <>
 <Seo />
 
-<ModalRoutingContext.Consumer closeTimeoutMS={300} >
+{/* <ModalRoutingContext.Consumer closeTimeoutMS={300} >
 {({ modal, closeTo }) => (
 <div style={{overflow:''}}>
   {modal ? (
@@ -43,9 +43,6 @@ export function Layout({ children }) {
     <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
     <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
       <AiOutlineClose />
-      {/* <span className="TRON">[</span> */}
-      
-      {/* <span className="" style={{fontSize:'70%', textAlign:'center'}}>home</span> */}
     </Link>
     </div>
     </>
@@ -55,7 +52,7 @@ export function Layout({ children }) {
 
 </div>
 )}
-</ModalRoutingContext.Consumer>
+</ModalRoutingContext.Consumer> */}
 
 
 

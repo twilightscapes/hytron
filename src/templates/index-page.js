@@ -554,10 +554,10 @@ function Iframer() {
 </div> */}
 
 
-<div>
+{/* <div>
 <StaticImage placeholder="blurred" loading="eager"
 alt="Semi-Conductor Industry" src="../../static/assets/hytron-worker2.webp" />
-</div>
+</div> */}
 
 
 
@@ -565,21 +565,21 @@ alt="Semi-Conductor Industry" src="../../static/assets/hytron-worker2.webp" />
 
 <div>
 <StaticImage className=""
-alt="Semi-Conductor Industry" src="../../static/assets/micro-seals.jpg" />
+alt="Semi-Conductor Industry" src="../../static/assets/banner-change-lives.webp" />
 </div>
 
 
 
 <div>
 <StaticImage className=""
-alt="Robotics Industry" src="../../static/assets/prosthetics.jpg" />
+alt="Robotics Industry" src="../../static/assets/banner-build-future.webp" />
 </div>
 
 
 
 <div>
 <StaticImage className=""
-alt="Medical Industry" src="../../static/assets/medical-partners.jpg" />
+alt="Medical Industry" src="../../static/assets/banner-critical-quality.webp" />
 </div>
 
 

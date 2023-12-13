@@ -73,7 +73,7 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-modal-routing-3`,
+      resolve: `gatsby-plugin-modal-routing-4`,
       options: {
         // A selector to set react-modal's app root to, default is `#___gatsby`
         // See http://reactcommunity.org/react-modal/accessibility/#app-element
