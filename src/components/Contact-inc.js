@@ -14,6 +14,7 @@ const Contact = class extends React.Component {
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        enctype="multipart/form-data"
       >
         <input type="hidden" name="form-name" value="contact" />
         <p>
@@ -74,3 +75,10 @@ export default Contact
 
   
       
+// Email krehling@hytronmfg.com on new submission from request-quote
+
+// Options
+// Email krehling@hytronmfg.com on new submission from contact
+
+// Options
+// Email admin@hytronmfg.com on new submission from any form

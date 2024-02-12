@@ -51,6 +51,7 @@ const Contact = () => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          enctype="multipart/form-data"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p>
