@@ -1114,9 +1114,11 @@ ISO 9001:2015 and AS9100D certified
 <p>At Hytron, we will provide you with world-class machining, milling and turning services. Our highly trained team of machinists use our state-of-the-art, high-precision CNC machines to manufacture incredible components trusted for their high quality and reliability.</p>
 
 
-<p>We are proud to support some of the largest industries in the world who are globally recognized market leaders. We have been privileged to have long-term relationships with many of our partners across industries.</p>
-{/* <p>We are proud to support some of the largest industries in the world who are globally recognized market leaders including aerospace/defense, semiconductor,
-electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p> */}
+{/* <p>We are proud to support some of the largest industries in the world who are globally recognized market leaders. We have been privileged to have long-term relationships with many of our partners across industries.</p> */}
+
+
+<p>We are proud to support some of the largest industries in the world who are globally recognized market leaders including aerospace/defense, semiconductor,
+electronics/telecom, military/government, and medical to mention a few. We have been privileged to have long-term relationships with many of our partners in these industries.</p>
 
 
 <h3>Learn More</h3>
