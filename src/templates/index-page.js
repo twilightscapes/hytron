@@ -565,21 +565,21 @@ alt="Semi-Conductor Industry" src="../../static/assets/hytron-worker2.webp" />
 
 <div>
 <StaticImage className=""
-alt="Semi-Conductor Industry" src="../../static/assets/banner-change-lives.webp" />
+alt="Semi-Conductor Industry" src="../../static/assets/hytron-banners3.webp" />
 </div>
 
 
 
 <div>
 <StaticImage className=""
-alt="Robotics Industry" src="../../static/assets/banner-build-future.webp" />
+alt="Robotics Industry" src="../../static/assets/hytron-banners1.webp" />
 </div>
 
 
 
 <div>
 <StaticImage className=""
-alt="Medical Industry" src="../../static/assets/banner-critical-quality.webp" />
+alt="Medical Industry" src="../../static/assets/hytron-banners2.webp" />
 </div>
 
 
