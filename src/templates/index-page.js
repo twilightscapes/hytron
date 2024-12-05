@@ -413,8 +413,28 @@ function Iframer() {
 
 {ShowFeature ? (
 <>
+
+
 <div className="RArrow"><span></span></div>
-<div className="horizontal-holder allin60panel" style={{position:'relative',  overflow:'', color:'#ccc', border:'1px solid transparent'}}>
+<div className="slideshow">
+  <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners3.webp')"}}>
+    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
+      Semi-Conductor Industry
+    </h3> */}
+  </div>
+  <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners1.webp')"}}>
+    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
+      Robotics Industry
+    </h3> */}
+  </div>
+  <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners2.webp')"}}>
+    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
+      Medical Industry
+    </h3> */}
+  </div>
+</div>
+
+<div className="horizontal-holder allin60panel" style={{position:'relative',  display:'none', color:'#ccc', border:'1px solid transparent'}}>
 
 
 
@@ -617,7 +637,7 @@ alt="Medical Industry" src="../../static/assets/hytron-banners2.webp" />
 
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0'}}>
 
-<div className="" style={{textAlign:'center', padding:'1rem', marginTop:'0' }}>
+<div className="" style={{textAlign:'center', padding:'1rem', marginTop:'1rem' }}>
       <Link state={{modal: true}} to="/contact/" className="button specialfont" style={{display:'flex', alignSelf:'center', margin:'0 auto', textDecoration:'none', fontSize:'clamp(1rem, 2vw, 2.8rem)', maxWidth:'40vw',}}>Request Quote</Link>
  </div>
 
