@@ -36,8 +36,8 @@ export default function PrivacyPage() {
       
       <div className="entry-content">
       <h2 className="storytitle">Privacy Policy</h2>
-<p>Privacy Policy Issue Date: December 16, 2019</p>
-<p>Revision Date: May 5, 2020.</p>
+<p>Privacy Policy Issue Date: December 6, 2024</p>
+<p>Revision Date: 12-6-2024.</p>
 <h3>1. WHO WE ARE</h3>
 <p>This web site (hytronmanufacturing.com) is owned and operated by Hytron Manufacturing Incorporated and will be referred to as “we”, “our”, “us” and like terms to refer to Hytron. By using this Web Site, you agree to this Privacy Policy as set forth on this page. Our Privacy Policy discloses the privacy practices we use and applies solely to information collected by this Web Site. We are committed to maintaining the accuracy, confidentiality and security of your personal information. This web site may include links to third-party web sites and clicking on those links may allow third parties to collect or share data about you. We do not control these web sites and are not responsible for their privacy policies.</p>
 <h3>2. DATA WE COLLECT ABOUT YOU</h3>
