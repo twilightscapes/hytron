@@ -414,25 +414,20 @@ function Iframer() {
 {ShowFeature ? (
 <>
 
+<StaticImage src="../../static/assets/banner-build-future.webp" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain',}} />
 
-<div className="RArrow"><span></span></div>
+{/* <div className="RArrow"><span></span></div>
 <div className="slideshow">
   <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners3.webp')"}}>
-    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
-      Semi-Conductor Industry
-    </h3> */}
+
   </div>
   <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners1.webp')"}}>
-    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
-      Robotics Industry
-    </h3> */}
+
   </div>
   <div className="slide" style={{backgroundImage: "url('/assets/hytron-banners2.webp')"}}>
-    {/* <h3 className="specialfont2" style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center', color: '#fff', background: 'rgba(0,0,0,0.6)', padding: '20px'}}>
-      Medical Industry
-    </h3> */}
+
   </div>
-</div>
+</div> */}
 
 <div className="horizontal-holder allin60panel" style={{position:'relative',  display:'none', color:'#ccc', border:'1px solid transparent'}}>
 
