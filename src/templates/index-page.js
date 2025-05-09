@@ -414,7 +414,7 @@ function Iframer() {
 {ShowFeature ? (
 <>
 
-<StaticImage src="../../static/assets/banner-build-future.webp" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain',}} />
+<StaticImage src="../../static/assets/gas-parts-banner.webp" alt="Hytron gas delivery parts" style={{height:'auto', maxHeight:'100vh', position:'relative', zIndex:'0', top:'0', border:'0px solid !important', objectFit:'contain',}} />
 
 {/* <div className="RArrow"><span></span></div>
 <div className="slideshow">
