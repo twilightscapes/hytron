@@ -1148,6 +1148,17 @@ electronics/telecom, military/government, and medical to mention a few. We have 
 
 <div id="contact" className="" style={{position:'relative', zIndex:'2', maxWidth:'', display:'grid', placeContent:'center', marginTop:'5vh'}}>
 <h2 style={{fontSize:'clamp(2rem, 5vw, 3rem)', textAlign:'center'}}>Contact Hytron</h2>
+
+<div style={{width:'90%', margin:'0 auto', textAlign:'center',}}>
+
+
+<p><strong>Hytron Manufacturing, Inc.</strong><br />
+15582 Chemical Lane<br />
+Huntington Beach, CA 92649<br />
+Phone: <a className="call-button btn" href="tel:7149036701">(714) 903-6701</a><br />
+Fax: (714) 903-4381</p>
+</div>
+
 <Contact />
 </div>
 
